@@ -47,7 +47,7 @@ var color = d3.scale.quantize()
     .range(d3.range(11).map(function(d) { return "q" + d + "-11"; }));
 
 var svg = d3.select("body").selectAll("svg")
-    .data(d3.range(1990, 2011))
+    .data(d3.range(2017,2015))
   .enter().append("svg")
     .attr("width", width)
     .attr("height", height)
@@ -79,12 +79,12 @@ svg.selectAll(".month")
     .attr("class", "month")
     .attr("d", monthPath);
 
-d3.csv("dji.csv", function(error, csv) {
+d3.csv("fitness.csv", function(error, csv) {
   if (error) throw error;
 
   var data = d3.nest()
     .key(function(d) { return d.Date; })
-    .rollup(function(d) { return (d[0].Close - d[0].Open) / d[0].Open; })
+    .rollup(function(d) { return d.Intensity; })
     .map(csv);
 
   rect.filter(function(d) { return d in data; })
