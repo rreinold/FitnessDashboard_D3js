@@ -1,0 +1,50 @@
+{
+	"CheckIn":{
+		"Date":"2015-08-01T00:00:00.000Z",
+		"Body Composition Analysis":{
+			"Weight":165.8,
+			"Total Body Water":104.5,
+			"Dry Lean Mass":38.1,
+			"Body Fat Mass":23.1,
+			"Lean Body Mass":142.6
+		},
+		"Muscle-Fat Analysis":{
+			"Weight":165.8,
+			"Skeletal Muscle Mass":81.6,
+			"Body Fat Mass":23.1
+		},
+		"Obesity Analysis":{
+			"BMI":24.5,
+			"Percent Body Fat":14
+		},
+		"Segmented Lean Analysis":{
+			"Right Arm":{
+				"Mass":8.84,
+				"Percent":121.1
+			},
+			"Left Arm":{
+				"Mass":8.51,
+				"Percent":116.5
+			},
+			"Trunk":{
+				"Mass":65.4,
+				"Percent":112.3
+			},
+			"Right Leg":{
+				"Mass":20.97,
+				"Percent":103.2
+			},
+			"Left Leg":{
+				"Mass":20.9,
+				"Percent":102.9
+			}
+		},
+		"Body Fat Differential":{
+			"Body Fat Mass Differential":0,
+			"Lean Body Mass Differential":0
+		},
+		"Basal Metabolic Rate":{
+			"Rate":1767
+		}
+	}
+}
