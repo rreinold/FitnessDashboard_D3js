@@ -6,7 +6,9 @@ body {
   font: 10px sans-serif;
   shape-rendering: crispEdges;
 }
-
+.header {
+  font: 40px sans-serif;
+}
 .day {
   fill: #fff;
   stroke: #ccc;
@@ -32,6 +34,7 @@ body {
 
 </style>
 <body>
+    <text class=header>LA Fitness Check-Ins in 2015 </text>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
 <script>
 
@@ -42,12 +45,12 @@ var width = 1411,
 var percent = d3.format(".1%"),
     format = d3.time.format("%Y-%m-%d");
 
-var color = d3.scale.quantize()
-    .domain([0, 10])
-    .range(d3.range(11).map(function(d) { return "q" + d + "-11"; }));
+var color = d3.scale.linear()
+    .domain([0, 8, 10])
+    .range(["white", "royalblue", "midnightblue"]);
 
 var svg = d3.select("body").selectAll("svg")
-    .data(d3.range(2015,2017))
+    .data(d3.range(2015,2016))
   .enter().append("svg")
     .attr("width", width)
     .attr("height", height)
@@ -92,9 +95,9 @@ d3.json("fitness.json", function(error, data) {
 
   rect.filter(function(d) { return d in nest; })
 
-      .attr("class", function(d) { console.log(nest[d][0].Intensity);return "day " + color(nest[d][0].Intensity); })
+      .style("fill", function(d) { return color(nest[d][0].Intensity); })
       .select("title")
-      .text(function(d) { return d + ": " + percent(data[d]); });
+      .text(function(d) { return d + ": " + percent(data[d][0].Intensity); });
 });
 
 function monthPath(t0) {
