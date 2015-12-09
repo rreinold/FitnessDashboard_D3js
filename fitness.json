@@ -1,5 +1,41 @@
 [
   {
+    "Date":"2015-03-30",
+    "Intensity":5
+  },
+  {
+    "Date":"2015-03-31",
+    "Intensity":6
+  },
+  {
+    "Date":"2015-04-29",
+    "Intensity":5
+  },
+  {
+    "Date":"2015-05-12",
+    "Intensity":6
+  },
+  {
+    "Date":"2015-05-26",
+    "Intensity":5
+  },
+  {
+    "Date":"2015-05-30",
+    "Intensity":2
+  },
+  {
+    "Date":"2015-06-06",
+    "Intensity":5
+  },
+  {
+    "Date":"2015-07-26",
+    "Intensity":4
+  },
+  {
+    "Date":"2015-08-10",
+    "Intensity":7
+  },
+  {
     "Date":"2015-09-02",
     "Intensity":4
   },
