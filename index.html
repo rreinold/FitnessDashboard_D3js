@@ -79,17 +79,20 @@ svg.selectAll(".month")
     .attr("class", "month")
     .attr("d", monthPath);
 
-d3.csv("fitness.csv", function(error, csv) {
+d3.json("fitness.json", function(error, data) {
   if (error) throw error;
 
-  var data = d3.nest()
-    .key(function(d) { return d.Date; })
-    .rollup(function(d) { return d[0].Intensity; })
-    .map(csv);
+  data.forEach(function(d) {
+    d.dd = format(format.parse(d.Date));
+  });
 
-  rect.filter(function(d) { return d in data; })
-      .attr("class", function(d) { return "day " + color(data[d]); })
-    .select("title")
+  var nest = d3.nest()
+    .key(function(d) { return d.dd; })
+    .map(data);
+
+  rect.filter(function(d) { return d in nest; })
+      .style("fill", "blue")
+      .select("title")
       .text(function(d) { return d + ": " + percent(data[d]); });
 });
 
