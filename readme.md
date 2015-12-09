@@ -1,0 +1,15 @@
+##Purpose
+
+Improve success rate of fitness goals via tracking, analyzing, and finding patterns across three categories of data: Exercise events, Body Composition, and Diet
+
+####Exercise Events
+
+Track and display any significant exercise performed. This includes gym sessions, hiking, running, basketballs, and other sports.
+
+####Body Composition
+
+Full Body composition analysis performed at NutriShop Austin-South on a rough weekly schedule.
+
+####Diet
+
+Maintain high-level record of eating habits.
