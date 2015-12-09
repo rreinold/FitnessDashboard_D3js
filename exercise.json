@@ -1,178 +1,238 @@
 [
   {
     "Date":"2015-03-30",
+    "Type":"Gym",
     "Intensity":5
   },
   {
     "Date":"2015-03-31",
+    "Type":"Gym",
     "Intensity":6
   },
   {
     "Date":"2015-04-29",
+    "Type":"Gym",
     "Intensity":5
   },
   {
     "Date":"2015-05-12",
+    "Type":"Gym",
     "Intensity":6
   },
   {
     "Date":"2015-05-26",
+    "Type":"Gym",
     "Intensity":5
   },
   {
     "Date":"2015-05-30",
+    "Type":"Gym",
     "Intensity":2
   },
   {
     "Date":"2015-06-06",
+    "Type":"Gym",
     "Intensity":5
   },
   {
     "Date":"2015-07-26",
+    "Type":"Gym",
     "Intensity":4
   },
   {
     "Date":"2015-08-10",
+    "Type":"Gym",
     "Intensity":7
   },
   {
     "Date":"2015-09-02",
+    "Type":"Gym",
     "Intensity":4
   },
   {
     "Date":"2015-09-06",
+    "Type":"Gym",
     "Intensity":6
   },
   {
     "Date":"2015-09-07",
+    "Type":"Gym",
     "Intensity":8
   },
   {
     "Date":"2015-09-10",
+    "Type":"Gym",
     "Intensity":7
   },
   {
     "Date":"2015-09-17",
+    "Type":"Gym",
     "Intensity":5
   },
   {
     "Date":"2015-09-21",
+    "Type":"Gym",
     "Intensity":3
   },
   {
     "Date":"2015-09-23",
+    "Type":"Gym",
     "Intensity":4
   },
   {
     "Date":"2015-09-27",
+    "Type":"Gym",
     "Intensity":8
   },
   {
     "Date":"2015-10-05",
+    "Type":"Gym",
     "Intensity":4
   },
   {
     "Date":"2015-10-14",
+    "Type":"Gym",
     "Intensity":8
   },
   {
     "Date":"2015-10-15",
+    "Type":"Gym",
     "Intensity":9
   },
   {
     "Date":"2015-10-17",
+    "Type":"Gym",
     "Intensity":10
   },
   {
     "Date":"2015-10-20",
+    "Type":"Gym",
     "Intensity":4
   },
   {
     "Date":"2015-10-23",
+    "Type":"Gym",
     "Intensity":7
   },
   {
     "Date":"2015-10-26",
+    "Type":"Gym",
     "Intensity":6
   },
   {
     "Date":"2015-10-27",
+    "Type":"Gym",
     "Intensity":9
   },
   {
     "Date":"2015-10-30",
+    "Type":"Gym",
     "Intensity":4
   },
   {
     "Date":"2015-11-4",
+    "Type":"Gym",
     "Intensity":8
   },
   {
     "Date":"2015-11-5",
+    "Type":"Gym",
     "Intensity":10
   },
   {
     "Date":"2015-11-6",
+    "Type":"Gym",
     "Intensity":5
   },
   {
     "Date":"2015-11-11",
+    "Type":"Gym",
     "Intensity":7
   },
   {
     "Date":"2015-11-12",
+    "Type":"Gym",
     "Intensity":8
   },
   {
     "Date":"2015-11-13",
+    "Type":"Gym",
     "Intensity":9
   },
   {
     "Date":"2015-11-14",
-    "Intensity":5
+    "Type":"Gym",
+    "Intensity":5,
+    "Cardio":{
+    	"Type":"Treadmill",
+    	"Distance":"3"
+    },
+    "WeightTraining":{
+    	"Chest":{
+    		"WeightRank":8,
+    		"RepRank":4
+    	}
+    }
   },
   {
     "Date":"2015-11-15",
+    "Type":"Gym",
     "Intensity":7
   },
   {
     "Date":"2015-11-16",
+    "Type":"Gym",
     "Intensity":9
   },
   {
     "Date":"2015-11-17",
+    "Type":"Gym",
     "Intensity":4
   },
   {
     "Date":"2015-11-19",
+    "Type":"Gym",
     "Intensity":5
   },
   {
     "Date":"2015-11-21",
+    "Type":"Gym",
     "Intensity":2
   },
   {
     "Date":"2015-11-23",
+    "Type":"Gym",
     "Intensity":4
   },
   {
     "Date":"2015-11-24",
+    "Type":"Gym",
+    "Intensity":8
+  },
+  {
+    "Date":"2015-11-25",
+    "Type":"Other",
+    "Note":"Trampoline park for 2 hours",
     "Intensity":8
   },
   {
     "Date":"2015-12-2",
+    "Type":"Gym",
     "Intensity":9
   },
   {
     "Date":"2015-12-4",
+    "Type":"Gym",
     "Intensity":7
   },
   {
     "Date":"2015-12-7",
+    "Type":"Gym",
     "Intensity":8
   },
   {
     "Date":"2015-12-8",
+    "Type":"Gym",
     "Intensity":4
   }
 ]
