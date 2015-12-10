@@ -32,10 +32,34 @@ body {
 .RdYlGn .q9-11{fill:rgb(26,152,80)}
 .RdYlGn .q10-11{fill:rgb(0,104,55)}
 
+.chart-gauge
+{
+  top:250px;
+  left:100px;
+  width: 400px;
+ } 
+.chart-filled
+{
+  fill: steelblue;
+}
+.chart-empty
+{
+  fill: #dedede;
+}
+
+.needle, .needle-center
+{
+  fill: #464A4F;
+}
+
 </style>
 <body>
-    <text class=header>LA Fitness Check-Ins in 2015 </text><br>
+    <text class=header>LA Fitness Check-Ins in 2015 </text>
+
+    <br>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+
 <script>
 
 var width = 1411,
@@ -51,10 +75,6 @@ var minIntensity = 0;
 var color = d3.scale.linear()
     .domain([0, 6, 10])
     .range(["yellow","orange", "crimson"]);
-
-
-
-
 
 var svg = d3.select("body").selectAll("svg")
     .data(d3.range(2015,2016))
@@ -162,4 +182,15 @@ var legend = d3.select("body").append("svg").append("g");
     .text("Low Intensity")
     .attr("x",cellSize + 5)
     .attr("y",3 * cellSize);
+
+var gauge1 = d3.select("body").append("div").attr("class","chart-gauge");
+
+// TODO Multiple gauges
+var gauge2 = d3.select("body").append("div").attr("class","chart-gauge");
+var gauge3 = d3.select("body").append("div").attr("class","chart-gauge");
+
+
 </script>
+<script type="text/javascript" src="d3_gauge.js"></script>
+
+
