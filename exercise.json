@@ -234,5 +234,10 @@
     "Date":"2015-12-8",
     "Type":"Gym",
     "Intensity":4
+  },
+  {
+    "Date":"2015-12-9",
+    "Type":"Rock Gym",
+    "Intensity":8
   }
 ]
