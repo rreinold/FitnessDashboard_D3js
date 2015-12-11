@@ -54,7 +54,7 @@ body {
 
 </style>
 <body>
-    <text class=header>LA Fitness Check-Ins in 2015 </text>
+    <text class=header>Exercise Tracking in 2015 </text>
 
     <br>
 
@@ -62,7 +62,7 @@ body {
 
 <script>
 
-var width = 1411,
+var width = 1500,
     height = 200,
     cellSize = 25; // cell size
 
@@ -83,7 +83,7 @@ var svg = d3.select("body").selectAll("svg")
     .attr("height", height)
     .attr("class", "RdYlGn")
   .append("g")
-    .attr("transform", "translate(" + ((width - cellSize * 53) / 2) + "," + (height - cellSize * 7 - 1) + ")");
+    .attr("transform", "translate(" + (((width - cellSize * 53) / 2) + 50) + "," + (height - cellSize * 7 - 1) + ")");
 
 svg.append("text")
     .attr("transform", "translate(-6," + cellSize * 3.5 + ")rotate(-90)")
@@ -122,7 +122,16 @@ d3.json("exercise.json", function(error, data) {
 
   rect.filter(function(d) { return d in nest; })
 
-      .style("fill", function(d) { return color(nest[d][0].Intensity); })
+      .style("fill", function(d) { 
+      
+        switch(nest[d][0].Type){
+          case "Hiking": return "cornflowerblue";
+          case "Gym": return "orangered";
+          default: return "mediumpurple";
+        }
+
+
+      })
       .select("title")
       .text(function(d) { return d + ", Intensity: " + nest[d][0].Intensity; });
 });
@@ -139,45 +148,46 @@ function monthPath(t0) {
 }
 
 // Legend explaining color scheme
-var legend = d3.select("body").append("svg").append("g");
+var legend = d3.select("body").selectAll("svg").append("g");
 
   legend
     .attr("width",400)
-    .attr("height",150);
+    .attr("height",150)
+    .attr("transform","translate(0,20)");
   legend
     .append("rect")
-    .style("fill",function(d){return color(maxIntensity)})
+    .style("fill","cornflowerblue")
     .attr("class","day")
     .attr("width",cellSize)
     .attr("height",cellSize)
     .attr("y",0);
   legend
     .append("rect")
-    .style("fill",function(d){return color((maxIntensity + minIntensity) / 2)})
+    .style("fill","orangered")
     .attr("class","day")
     .attr("width",cellSize)
     .attr("height",cellSize)
     .attr("y", 1 * cellSize);
   legend
     .append("rect")
-    .style("fill",function(d){return color(minIntensity)})
+    .style("fill","mediumpurple")
     .attr("class","day")
     .attr("width",cellSize)
     .attr("height",cellSize)
     .attr("y", 2 * cellSize);
   legend
     .append("text")
-    .text("Highest Intensity")
+    .text("Hiking")
     .attr("x",cellSize + 5)
     .attr("y",cellSize);
   legend
     .append("text")
-    .text("Medium Intensity")
+    .text("Gym")
     .attr("x",cellSize + 5)
     .attr("y",2 * cellSize);
   legend
     .append("text")
-    .text("Low Intensity")
+    .text("Rock Climbing")
     .attr("x",cellSize + 5)
     .attr("y",3 * cellSize);
 

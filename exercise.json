@@ -130,19 +130,24 @@
     "Intensity":4
   },
   {
-    "Date":"2015-11-4",
+    "Date":"2015-11-04",
     "Type":"Gym",
     "Intensity":8
   },
   {
-    "Date":"2015-11-5",
+    "Date":"2015-11-05",
     "Type":"Gym",
     "Intensity":10
   },
   {
-    "Date":"2015-11-6",
+    "Date":"2015-11-06",
     "Type":"Gym",
     "Intensity":5
+  },
+  {
+    "Date":"2015-11-08",
+    "Type":"Hiking",
+    "Intensity":6
   },
   {
     "Date":"2015-11-11",
@@ -176,8 +181,8 @@
   },
   {
     "Date":"2015-11-15",
-    "Type":"Gym",
-    "Intensity":7
+    "Type":"Hiking",
+    "Intensity":6
   },
   {
     "Date":"2015-11-16",
@@ -200,6 +205,11 @@
     "Intensity":2
   },
   {
+    "Date":"2015-11-22",
+    "Type":"Hiking",
+    "Intensity":6
+  },
+  {
     "Date":"2015-11-23",
     "Type":"Gym",
     "Intensity":4
@@ -216,28 +226,43 @@
     "Intensity":8
   },
   {
-    "Date":"2015-12-2",
+    "Date":"2015-12-01",
+    "Type":"Hiking",
+    "Intensity":5
+  },
+  {
+    "Date":"2015-12-02",
     "Type":"Gym",
     "Intensity":9
   },
   {
-    "Date":"2015-12-4",
+    "Date":"2015-12-04",
     "Type":"Gym",
     "Intensity":7
   },
   {
-    "Date":"2015-12-7",
+    "Date":"2015-12-06",
+    "Type":"Hiking",
+    "Intensity":7
+  },
+  {
+    "Date":"2015-12-07",
     "Type":"Gym",
     "Intensity":8
   },
   {
-    "Date":"2015-12-8",
+    "Date":"2015-12-08",
     "Type":"Gym",
     "Intensity":4
   },
   {
-    "Date":"2015-12-9",
+    "Date":"2015-12-09",
     "Type":"Rock Gym",
     "Intensity":8
+  },
+  {
+    "Date":"2015-12-10",
+    "Type":"Gym",
+    "Intensity":3
   }
 ]
