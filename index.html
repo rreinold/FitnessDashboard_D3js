@@ -36,18 +36,6 @@
     stroke-width: 2px;
   }
 
-  .RdYlGn .q0-11{fill:rgb(165,0,38)}
-  .RdYlGn .q1-11{fill:rgb(215,48,39)}
-  .RdYlGn .q2-11{fill:rgb(244,109,67)}
-  .RdYlGn .q3-11{fill:rgb(253,174,97)}
-  .RdYlGn .q4-11{fill:rgb(254,224,139)}
-  .RdYlGn .q5-11{fill:rgb(255,255,191)}
-  .RdYlGn .q6-11{fill:rgb(217,239,139)}
-  .RdYlGn .q7-11{fill:rgb(166,217,106)}
-  .RdYlGn .q8-11{fill:rgb(102,189,99)}
-  .RdYlGn .q9-11{fill:rgb(26,152,80)}
-  .RdYlGn .q10-11{fill:rgb(0,104,55)}
-
   .chart-gauge
   {
     top:250px;
@@ -89,9 +77,9 @@
 
           <!-- Thumb Items -->
 
-            <article class="item thumb" id="tracker" data-width="1500">
+            <article class="item thumb" id="tracker" data-width="1050">
               <h2>2015 Exercise Tracker - Calendar View</h2>
-              <!--<a href="images/fulls/01.jpg" class="image"><img src="images/thumbs/01.jpg" alt=""></a>-->
+              <!-- SVG will be dropped here -->
             </article>
 
             <article class="item thumb" data-width="384">
@@ -109,9 +97,9 @@
               <a href="images/fulls/04.jpg" class="image"><img src="images/thumbs/04.jpg" alt=""></a>
             </article>
 
-            <article class="item thumb" data-width="476">
-              <h2>Kingdom of the Wind</h2>
-              <a href="images/fulls/05.jpg" class="image"><img src="images/thumbs/05.jpg" alt=""></a>
+            <article class="item thumb" id="goal_miletime" data-width="476">
+              <h2>Goal - 1 Mile Time</h2>
+              <!-- SVG will be dropped here -->
             </article>
 
             <article class="item thumb" data-width="232">
@@ -124,9 +112,9 @@
               <a href="images/fulls/07.jpg" class="image"><img src="images/thumbs/07.jpg" alt=""></a>
             </article>
 
-            <article class="item thumb" data-width="348">
-              <h2>The Spectators</h2>
-              <a href="images/fulls/08.jpg" class="image"><img src="images/thumbs/08.jpg" alt=""></a>
+            <article class="item thumb" id="goal_pcf" data-width="348">
+              <h2>Goal - Percent Body Fat</h2>
+              <!-- SVG will be dropped here -->
             </article>
 
           <!-- Filler Thumb Items (just for demonstration purposes) -->
@@ -178,7 +166,7 @@
 
     var width = 1500,
         height = 200,
-        cellSize = 25; // cell size
+        cellSize = 18; // cell size
 
     var percent = d3.format(".1%"),
         format = d3.time.format("%Y-%m-%d");
@@ -195,11 +183,10 @@
       .enter().append("svg")
         .attr("width", width)
         .attr("height", height)
-        .attr("class", "RdYlGn")
       .append("g")
 
         // This line was disabling color coding
-        .attr("transform", "translate(10,10)");
+        .attr("transform", "translate(10,30)");
 
     svg.append("text")
         .attr("transform", "translate(-6," + cellSize * 3.5 + ")rotate(-90)")
@@ -225,7 +212,7 @@
         .attr("class", "month")
         .attr("d", monthPath);
 
-    d3.json("../assets/json/exercise.json", function(error, data) {
+    d3.json("/assets/json/exercise.json", function(error, data) {
       if (error) throw error;
 
       data.forEach(function(d) {
@@ -269,7 +256,7 @@
       legend
         .attr("width",400)
         .attr("height",150)
-        .attr("transform","translate(1350,20)");
+        .attr("transform","translate(980,30)");
       legend
         .append("rect")
         .style("fill","cornflowerblue")
@@ -307,9 +294,9 @@
         .attr("x",cellSize + 5)
         .attr("y",3 * cellSize);
 
-    // var gauge1 = d3.select("body").append("div").attr("class","chart-gauge");
+    var gauge1 = d3.select("#goal_pcf").append("div").attr("class","chart-gauge");
 
-    // var gaugeText = d3.select("body").append("text").text("These gauges will show my fitness goal progress.").attr("class","header");
+    // var gaugeText = d3.select("#goal_pcf").append("text").text("These gauges will show my fitness goal progress.").attr("class","header");
 
     // TODO Multiple gauges
     // var gauge2 = d3.select("body").append("div").attr("class","chart-gauge");
@@ -317,7 +304,7 @@
 
 
     </script>
-    <!-- <script type="text/javascript" src="d3_gauge.js"></script> -->
+    <script type="text/javascript" src="assets/js/d3_gauge.js"></script>
 
   </body>
 </html>
