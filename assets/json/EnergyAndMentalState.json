@@ -1,0 +1,65 @@
+[
+{
+	"Date":"2015-11-24",
+	"Sleep_Length":8,
+	"Sleep Quality":8,
+	"Energy_Available":9,
+	"Energy_Exerted":7,
+	"Anxiety":1,
+	"Confidence":10	
+},
+{
+	"Date":"2015-12-10",
+	"Sleep_Length":7,
+	"Sleep_Quality":8,
+	"Energy_Available":4,
+	"Energy_Exerted":4,
+	"Anxiety":7,
+	"Confidence":4
+},
+{
+	"Date":"2015-12-11",
+	"Sleep_Length":8,
+	"Sleep_Quality":8,
+	"Energy_Available":4,
+	"Energy_Exerted":4,
+	"Anxiety":8,
+	"Confidence":4
+},
+{
+	"Date":"2015-12-12",
+	"Sleep_Length":9,
+	"Sleep_Quality":2,
+	"Energy_Available":2,
+	"Energy_Exerted":2,
+	"Anxiety":1,
+	"Confidence":7
+},
+{
+	"Date":"2015-12-13",
+	"Sleep_Length":12,
+	"Sleep_Quality":10,
+	"Energy_Available":4,
+	"Energy_Exerted":4,
+	"Anxiety":5,
+	"Confidence":6
+},
+{
+	"Date":"2015-12-14",
+	"Sleep_Length":9,
+	"Sleep_Quality":10,
+	"Energy_Available":8,
+	"Energy_Exerted":8,
+	"Anxiety":4,
+	"Confidence":7
+},
+{
+	"Date":"2015-12-15",
+	"Sleep_Length":9,
+	"Sleep_Quality":10,
+	"Energy_Available":10,
+	"Energy_Exerted":8,
+	"Anxiety":1,
+	"Confidence":9
+}
+]
