@@ -4,7 +4,7 @@
 Hands-on practice using Mike Bostock's D3.js library, and refine my web development skills
 
 ###Personal Growth Goals
-Improve success rate of fitness goals via fusing, tracking, and analyzing a variety of datasets.
+Improve success rate of fitness goals via fusing, tracking, and analyzing a variety of datasets. I also hope to bring about the Hawthorne effect, which is a type of reactivity in which individuals modify or improve an aspect of their behavior in response to their awareness of being observed.
 
 ##Datasets
 ####Exercise Events

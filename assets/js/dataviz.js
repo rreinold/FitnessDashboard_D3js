@@ -148,6 +148,10 @@ var width = 1500,
 
     var gauge1 = d3.select("#goal_pcf").append("div").attr("class","chart-gauge");
 
+    var miletime = d3.select("#goal_miletime").append("svg").attr("width",400)
+        .attr("height",300);
+    miletime.append("text").text("7:00").attr("y","130").attr("x","75").style("font-size","150px");
+;
     // var gaugeText = d3.select("#goal_pcf").append("text").text("These gauges will show my fitness goal progress.").attr("class","header");
 
     // TODO Multiple gauges
