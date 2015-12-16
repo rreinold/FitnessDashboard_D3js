@@ -20,15 +20,15 @@ var width = 1500,
       .append("g")
 
         // This line was disabling color coding
-        .attr("transform", "translate(30,30)");
+        .attr("transform", "translate(-500,30)");
 
     svg.append("text")
-        .attr("transform", "translate(-6," + cellSize * 3.5 + ")rotate(-90)")
+        .attr("transform", "translate(525," + cellSize * 3.5 + ")rotate(-90)")
         .style("text-anchor", "middle")
         .text(function(d) { return d; });
 
     var rect = svg.selectAll(".day")
-        .data(function(d) { return d3.time.days(new Date(d, 0, 1), new Date(d + 1, 0, 1)); })
+        .data(function(d) { return d3.time.days(new Date(d, 7, 1), new Date(d + 1, 0, 1)); })
       .enter().append("rect")
         .attr("class", "day")
         .attr("width", cellSize)
@@ -41,7 +41,7 @@ var width = 1500,
         .text(function(d) { return d; });
 
     svg.selectAll(".month")
-        .data(function(d) { return d3.time.months(new Date(d, 0, 1), new Date(d + 1, 0, 1)); })
+        .data(function(d) { return d3.time.months(new Date(d, 7, 1), new Date(d + 1, 0, 1)); })
       .enter().append("path")
         .attr("class", "month")
         .attr("d", monthPath);
@@ -91,7 +91,7 @@ var width = 1500,
       legend
         .attr("width",400)
         .attr("height",150)
-        .attr("transform","translate(990,30)");
+        .attr("transform","translate(475,30)");
       legend
         .append("rect")
         .style("fill","cornflowerblue")
