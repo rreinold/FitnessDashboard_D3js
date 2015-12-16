@@ -25,7 +25,7 @@ var width = 1500,
     svg.append("text")
         .attr("transform", "translate(525," + cellSize * 3.5 + ")rotate(-90)")
         .style("text-anchor", "middle")
-        .text(function(d) { return d; });
+        .text(function(d) { return "Aug " + d; });
 
     var rect = svg.selectAll(".day")
         .data(function(d) { return d3.time.days(new Date(d, 7, 1), new Date(d + 1, 0, 1)); })
