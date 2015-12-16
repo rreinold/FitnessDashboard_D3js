@@ -17,4 +17,8 @@ Full Body composition analysis performed at NutriShop Austin-South on a rough we
 Maintain high-level record of eating habits.
 
 ##Credit
-Credit to ameyms for D3 Gauge - Part Deux: http://bl.ocks.org/ameyms/9184728
+####Credit to ameyms for D3 Gauge - Part Deux
+http://bl.ocks.org/ameyms/9184728
+
+####Credit to HTML5Up for their Parallelism HTML Template 
+http://html5up.net/parallelism
