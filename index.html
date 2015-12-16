@@ -6,7 +6,7 @@
 -->
 <html>
   <head>
-    <title>Parallelism by HTML5 UP</title>
+    <title>Fitness Data Visualization - Robert Reinold</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -18,13 +18,6 @@
 
   <style>
 
-  body {
-    font: 10px sans-serif;
-    shape-rendering: crispEdges;
-  }
-  .header {
-    font: 40px sans-serif;
-  }
   .day {
     fill: #fff;
     stroke: #ccc;
@@ -230,6 +223,7 @@
             switch(nest[d][0].Type){
               case "Hiking": return "cornflowerblue";
               case "Gym": return "orangered";
+              case "Basketball": return "gold"
               default: return "mediumpurple";
             }
 
@@ -279,6 +273,13 @@
         .attr("height",cellSize)
         .attr("y", 2 * cellSize);
       legend
+        .append("rect")
+        .style("fill","gold")
+        .attr("class","day")
+        .attr("width",cellSize)
+        .attr("height",cellSize)
+        .attr("y", 3 * cellSize);
+      legend
         .append("text")
         .text("Hiking")
         .attr("x",cellSize + 5)
@@ -293,6 +294,11 @@
         .text("Rock Climbing")
         .attr("x",cellSize + 5)
         .attr("y",3 * cellSize);
+      legend
+        .append("text")
+        .text("Basketball")
+        .attr("x",cellSize + 5)
+        .attr("y",4 * cellSize);
 
     var gauge1 = d3.select("#goal_pcf").append("div").attr("class","chart-gauge");
 

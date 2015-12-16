@@ -48,18 +48,18 @@
 	"Date":"2015-12-14",
 	"Sleep_Length":9,
 	"Sleep_Quality":10,
-	"Energy_Available":8,
-	"Energy_Exerted":8,
-	"Anxiety":4,
-	"Confidence":7
-},
-{
-	"Date":"2015-12-15",
-	"Sleep_Length":9,
-	"Sleep_Quality":10,
 	"Energy_Available":10,
 	"Energy_Exerted":8,
 	"Anxiety":1,
 	"Confidence":9
+},
+{
+	"Date":"2015-12-15",
+	"Sleep_Length":11,
+	"Sleep_Quality":10,
+	"Energy_Available":10,
+	"Energy_Exerted":6,
+	"Anxiety":0,
+	"Confidence":10
 }
 ]
