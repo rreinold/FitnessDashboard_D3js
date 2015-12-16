@@ -1,6 +1,13 @@
 ##Purpose
 
-Improve success rate of fitness goals via tracking, analyzing, and finding patterns across three categories of data: Exercise events, Body Composition, and Diet
+###Technical Goals
+
+Hands-on practice using Mike Bostock's D3.js library, and refine my web development skills
+
+###Personal Growth Goals
+Improve success rate of fitness goals via tracking, analyzing, and finding patterns.
+
+##Datasets
 
 ####Exercise Events
 
