@@ -20,10 +20,10 @@ var width = 1500,
       .append("g")
 
         // This line was disabling color coding
-        .attr("transform", "translate(-500,30)");
+        .attr("transform", "translate(-375,30)");
 
     svg.append("text")
-        .attr("transform", "translate(525," + cellSize * 3.5 + ")rotate(-90)")
+        .attr("transform", "translate(550," + cellSize * 3.5 + ")rotate(-90)")
         .style("text-anchor", "middle")
         .text(function(d) { return "Aug " + d; });
 
@@ -91,7 +91,7 @@ var width = 1500,
       legend
         .attr("width",400)
         .attr("height",150)
-        .attr("transform","translate(475,30)");
+        .attr("transform","translate(20,50)");
       legend
         .append("rect")
         .style("fill","cornflowerblue")
@@ -120,6 +120,11 @@ var width = 1500,
         .attr("width",cellSize)
         .attr("height",cellSize)
         .attr("y", 3 * cellSize);
+      legend
+        .append("text")
+        .text("Type of Exercise")
+        .attr("x",0)
+        .attr("y",-8);
       legend
         .append("text")
         .text("Hiking")
