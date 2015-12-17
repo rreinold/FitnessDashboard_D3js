@@ -1,4 +1,4 @@
-{
+[{
 		"Date":"2015-08-01T00:00:00.000Z",
 		"Body Composition Analysis":{
 			"Weight":165.8,
@@ -45,4 +45,4 @@
 		"Basal Metabolic Rate":{
 			"Rate":1767
 		}
-}
+}]
