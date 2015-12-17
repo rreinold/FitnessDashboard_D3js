@@ -62,10 +62,10 @@ var width = 1500,
           .style("fill", function(d) { 
           
             switch(nest[d][0].Type){
-              case "Hiking": return "cornflowerblue";
-              case "Gym": return "orangered";
+              case "Hiking": return "#FF851B";
+              case "Gym": return "#0074D9";
               case "Basketball": return "gold"
-              default: return "mediumpurple";
+              default: return "#001f3f";
             }
 
 
@@ -94,21 +94,21 @@ var width = 1500,
         .attr("transform","translate(20,50)");
       legend
         .append("rect")
-        .style("fill","cornflowerblue")
+        .style("fill","#FF851B")
         .attr("class","day")
         .attr("width",cellSize)
         .attr("height",cellSize)
         .attr("y",0);
       legend
         .append("rect")
-        .style("fill","orangered")
+        .style("fill","#0074D9")
         .attr("class","day")
         .attr("width",cellSize)
         .attr("height",cellSize)
         .attr("y", 1 * cellSize);
       legend
         .append("rect")
-        .style("fill","mediumpurple")
+        .style("fill","#001f3f")
         .attr("class","day")
         .attr("width",cellSize)
         .attr("height",cellSize)
