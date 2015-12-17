@@ -46,7 +46,7 @@ var width = 1500,
         .attr("class", "month")
         .attr("d", monthPath);
 
-    d3.json("./assets/json/exercise.json", function(error, data) {
+    d3.json("./assets/json/Exercise.json", function(error, data) {
       if (error) throw error;
 
       data.forEach(function(d) {
