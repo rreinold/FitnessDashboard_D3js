@@ -25,3 +25,5 @@ http://bl.ocks.org/ameyms/9184728
 
 Credit to HTML5Up for their Parallelism HTML Template 
 http://html5up.net/parallelism
+
+Credit to Rohan Gupta, James Fenton, Jurjen Versteeg and The Noun Project for the incredible icons.

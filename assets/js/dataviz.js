@@ -1,9 +1,18 @@
-var width = 1500,
+    var width = 1500,
         height = 200,
         cellSize = 18; // cell size
 
     var percent = d3.format(".1%"),
         format = d3.time.format("%Y-%m-%d");
+
+    var typesOfExercise = 
+      {
+        Basketball:   {color:"gold"},
+        Gym:          {color:"#0074D9"},
+        RockClimbing: {color:"#001f3f"},
+        Hiking:        {color:"#FF851B"}
+      }
+    var defaultExerciseColor = "purple";
 
     var maxIntensity = 10;
     var minIntensity = 0;
@@ -61,13 +70,15 @@ var width = 1500,
 
           .style("fill", function(d) { 
           
-            switch(nest[d][0].Type){
-              case "Hiking": return "#FF851B";
-              case "Gym": return "#0074D9";
-              case "Basketball": return "gold"
-              default: return "#001f3f";
+            for(var type in typesOfExercise){
+              console.log(type);
+              //console.log("Do they equal? " + nest[d][0].Type + "?=" + type.name);
+              if (nest[d][0].Type == type){
+                return typesOfExercise[type].color;
+              }
             }
 
+            return defaultExerciseColor;
 
           })
           .select("title")
@@ -86,39 +97,40 @@ var width = 1500,
     }
 
     // Legend explaining color scheme
-    var legend = d3.select("body").selectAll("svg").append("g");
-
+    var legend = d3.select("#tracker").selectAll("svg").append("g");
       legend
-        .attr("width",400)
-        .attr("height",150)
-        .attr("transform","translate(20,50)");
+        .attr("transform","translate(20,50)")
+        .append("rect")
+        .attr("class","day")
+        .attr("width",cellSize)
+        .attr("height",cellSize);
       legend
         .append("rect")
-        .style("fill","#FF851B")
         .attr("class","day")
         .attr("width",cellSize)
         .attr("height",cellSize)
+        .style("fill","#FF851B")
         .attr("y",0);
       legend
         .append("rect")
-        .style("fill","#0074D9")
         .attr("class","day")
         .attr("width",cellSize)
         .attr("height",cellSize)
+        .style("fill","#0074D9")
         .attr("y", 1 * cellSize);
       legend
         .append("rect")
-        .style("fill","#001f3f")
         .attr("class","day")
         .attr("width",cellSize)
         .attr("height",cellSize)
+        .style("fill","#001f3f")
         .attr("y", 2 * cellSize);
       legend
         .append("rect")
-        .style("fill","gold")
         .attr("class","day")
         .attr("width",cellSize)
         .attr("height",cellSize)
+        .style("fill","gold")
         .attr("y", 3 * cellSize);
       legend
         .append("text")
@@ -150,41 +162,101 @@ var width = 1500,
         var bodyFatId = "#GoalPercentBodyFat";
         var initialBodyFatPercentage = 15;
         // var gauge1 = d3.select(bodyFatId).append("div").attr("class","chart-gauge");
-        var pcfsvg = d3.select(bodyFatId).append("svg").attr("width",450).attr("height",300);
+        var pcfsvg = d3.select(bodyFatId).selectAll("svg").attr("width",450).attr("height",200);
         d3.json("./assets/json/BodyComposition.json", function(error, data) {
           if (error) throw error;
           var bodyFatPercentage = data[0]["Obesity Analysis"]["Percent Body Fat"];
-          pcfsvg.append("text").text(bodyFatPercentage+"%").attr("y","130").attr("x","100").style("font-size","150px").style("fill","#0074D9");
-          d3.select(oneMileTimeId).append("h2").text("Percent Body Fat Loss - Current: "+ bodyFatPercentage + "% / Target: 12.0%");
+          pcfsvg
+          .append("text")
+            .text(bodyFatPercentage+"%")
+            .attr("text-anchor","middle")
+            .attr("y","75")
+            .attr("x","120")
+            .style("font-size","80px")
+            .style("fill","#0074D9");
+          d3
+            .select(bodyFatId)
+          .append("h2")
+            .text("Percent Body Fat Loss - Current: "+ bodyFatPercentage + "% / Target: 12.0%");
         });
 
         // 1 Mile Time box
         var oneMileTimeId = "#Goal1MileTime"
-        var miletime = d3.select(oneMileTimeId).append("svg").attr("width",400)
-        .attr("height",300);
+        var miletime = d3
+          .select(oneMileTimeId)
+          .selectAll("svg")
+          .attr("width",400)
+          .attr("height",300);
         var mileTimeValue = "0:00"; 
 
         d3.json("./assets/json/1MileTimes.json", function(error, data) {
           if (error) throw error;
           mileTimeValue = data[0].Time;
-          miletime.append("text").text(mileTimeValue).attr("y","130").attr("x","75").style("font-size","150px").style("fill","#3D9970");
-          d3.select(oneMileTimeId).append("h2").text("1 Mile Time - Current: " + mileTimeValue + " / Target: 6:00");
+          miletime
+            .append("text")
+              .text(mileTimeValue)
+              .attr("y","50")
+              .attr("x","80")
+              .attr("text-anchor","middle")
+              .style("font-size","50px")
+              .style("fill","#3D9970");
+          d3
+            .select(oneMileTimeId).
+            append("h2").
+            text("1 Mile Time - Current: " + mileTimeValue + " / Target: 6:00");
         });
 
         // 10 Rep Bench Max Box
         var benchMaxId = "#Goal10RepBenchMax"
         var benchMaxValue = "145lbs";
-        d3.select(benchMaxId).append("svg").attr("width",450).attr("height",300).append("text").text(benchMaxValue).attr("y","130").attr("x","25").style("font-size","150px").style("fill","#0074D9");
+        var width = d3
+                    .select(benchMaxId)
+                    .attr("data-width");
+        d3
+          .select(benchMaxId)
+          .selectAll("svg")
+          .attr("width",width)
+          .attr("height",300)
+        .append("g")
+        .append("text")
+          .text(benchMaxValue)
+          .attr("text-anchor","middle")
+          .attr("y","130")
+          .attr("x","280")
+          .style("font-size","100px")
+          .style("fill","#0074D9");
 
         // Free Throws
         var freeThrowsId = "#GoalFreeThrows";
         var freeThrowsValue = "40%";
-        d3.select(freeThrowsId).append("svg").attr("width",300).attr("height",275).append("text").text(freeThrowsValue).attr("y","130").attr("x","15").style("font-size","150px").style("fill","#E82C0C");
+        d3
+          .select(freeThrowsId)
+        .append("svg")
+          .attr("width",300)
+          .attr("height",275)
+        .append("text")
+          .text(freeThrowsValue)
+          // .attr("text-anchor","middle")
+          .attr("y","130")
+          .attr("x","15")
+          .style("font-size","150px")
+          .style("fill","#E82C0C");
 
         // Pull Ups
         var pullUpsId = "#GoalPullUps";
         var pullUpsValue = 10;
-        d3.select(pullUpsId).append("svg").attr("width",300).attr("height",275).append("text").text(pullUpsValue).attr("y","130").attr("x","70").style("font-size","150px").style("fill","#E82C0C");
+        d3
+          .select(pullUpsId)
+        .append("svg")
+          .attr("width",300)
+          .attr("height",275)
+        .append("text")
+          .text(pullUpsValue)
+          // .attr("text-anchor","middle")
+          .attr("y","130")
+          .attr("x","70")
+          .style("font-size","150px")
+          .style("fill","#E82C0C");
 
     // var gaugeText = d3.select("#goal_pcf").append("text").text("These gauges will show my fitness goal progress.").attr("class","header");
 
