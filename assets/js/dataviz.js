@@ -149,12 +149,12 @@ var width = 1500,
         // Percent Body Fat Box
         var bodyFatId = "#GoalPercentBodyFat";
         var initialBodyFatPercentage = 15;
-        var gauge1 = d3.select(bodyFatId).append("div").attr("class","chart-gauge");
+        // var gauge1 = d3.select(bodyFatId).append("div").attr("class","chart-gauge");
         var pcfsvg = d3.select(bodyFatId).append("svg").attr("width",450).attr("height",300);
         d3.json("./assets/json/BodyComposition.json", function(error, data) {
           if (error) throw error;
           var bodyFatPercentage = data[0]["Obesity Analysis"]["Percent Body Fat"];
-          pcfsvg.append("text").text(bodyFatPercentage+"%").attr("y","130").attr("x","250").style("font-size","50px");
+          pcfsvg.append("text").text(bodyFatPercentage+"%").attr("y","130").attr("x","100").style("font-size","150px");
           d3.select(oneMileTimeId).append("h2").text("Percent Body Fat Loss - Current: "+ bodyFatPercentage + "% / Target: 12.0%");
         });
 
