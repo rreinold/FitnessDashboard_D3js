@@ -1,3 +1,6 @@
+See this project in action:
+[http://www.RobReinold.com/fitness](http://www.RobReinold.com/fitness)
+
 ##Purpose
 
 ###Technical Goals
