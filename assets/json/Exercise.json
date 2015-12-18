@@ -1,117 +1,117 @@
 [
   {
     "Date":"2015-03-30",
-    "Type":"Gym",
+    "Type":"StrengthTraining",
     "Intensity":5
   },
   {
     "Date":"2015-03-31",
-    "Type":"Gym",
+    "Type":"StrengthTraining",
     "Intensity":6
   },
   {
     "Date":"2015-04-29",
-    "Type":"Gym",
+    "Type":"StrengthTraining",
     "Intensity":5
   },
   {
     "Date":"2015-05-12",
-    "Type":"Gym",
+    "Type":"StrengthTraining",
     "Intensity":6
   },
   {
     "Date":"2015-05-26",
-    "Type":"Gym",
+    "Type":"StrengthTraining",
     "Intensity":5
   },
   {
     "Date":"2015-05-30",
-    "Type":"Gym",
+    "Type":"StrengthTraining",
     "Intensity":2
   },
   {
     "Date":"2015-06-06",
-    "Type":"Gym",
+    "Type":"StrengthTraining",
     "Intensity":5
   },
   {
     "Date":"2015-07-26",
-    "Type":"Gym",
+    "Type":"StrengthTraining",
     "Intensity":4
   },
   {
     "Date":"2015-08-10",
-    "Type":"Gym",
+    "Type":"StrengthTraining",
     "Intensity":7
   },
   {
     "Date":"2015-09-02",
-    "Type":"Gym",
+    "Type":"StrengthTraining",
     "Intensity":4
   },
   {
     "Date":"2015-09-06",
-    "Type":"Gym",
+    "Type":"StrengthTraining",
     "Intensity":6
   },
   {
     "Date":"2015-09-07",
-    "Type":"Gym",
+    "Type":"StrengthTraining",
     "Intensity":8
   },
   {
     "Date":"2015-09-10",
-    "Type":"Gym",
+    "Type":"StrengthTraining",
     "Intensity":7
   },
   {
     "Date":"2015-09-17",
-    "Type":"Gym",
+    "Type":"StrengthTraining",
     "Intensity":5
   },
   {
     "Date":"2015-09-21",
-    "Type":"Gym",
+    "Type":"StrengthTraining",
     "Intensity":3
   },
   {
     "Date":"2015-09-23",
-    "Type":"Gym",
+    "Type":"StrengthTraining",
     "Intensity":4
   },
   {
     "Date":"2015-09-27",
-    "Type":"Gym",
+    "Type":"StrengthTraining",
     "Intensity":8
   },
   {
     "Date":"2015-10-05",
-    "Type":"Gym",
+    "Type":"StrengthTraining",
     "Intensity":4
   },
   {
     "Date":"2015-10-14",
-    "Type":"Gym",
+    "Type":"StrengthTraining",
     "Intensity":8
   },
   {
     "Date":"2015-10-15",
-    "Type":"Gym",
+    "Type":"StrengthTraining",
     "Intensity":9
   },
   {
     "Date":"2015-10-17",
-    "Type":"Gym",
+    "Type":"StrengthTraining",
     "Intensity":10
   },
   {
     "Date":"2015-10-20",
-    "Type":"Gym",
+    "Type":"StrengthTraining",
     "Intensity":4
   },
   {
     "Date":"2015-10-23",
-    "Type":"Gym",
+    "Type":"StrengthTraining",
     "Intensity":7
   },
   {
@@ -121,32 +121,32 @@
   },
   {
     "Date":"2015-10-26",
-    "Type":"Gym",
+    "Type":"StrengthTraining",
     "Intensity":6
   },
   {
     "Date":"2015-10-27",
-    "Type":"Gym",
+    "Type":"StrengthTraining",
     "Intensity":9
   },
   {
     "Date":"2015-10-30",
-    "Type":"Gym",
+    "Type":"StrengthTraining",
     "Intensity":4
   },
   {
     "Date":"2015-11-04",
-    "Type":"Gym",
+    "Type":"StrengthTraining",
     "Intensity":8
   },
   {
     "Date":"2015-11-05",
-    "Type":"Gym",
+    "Type":"StrengthTraining",
     "Intensity":10
   },
   {
     "Date":"2015-11-06",
-    "Type":"Gym",
+    "Type":"StrengthTraining",
     "Intensity":5
   },
   {
@@ -156,22 +156,22 @@
   },
   {
     "Date":"2015-11-11",
-    "Type":"Gym",
+    "Type":"StrengthTraining",
     "Intensity":7
   },
   {
     "Date":"2015-11-12",
-    "Type":"Gym",
+    "Type":"StrengthTraining",
     "Intensity":8
   },
   {
     "Date":"2015-11-13",
-    "Type":"Gym",
+    "Type":"StrengthTraining",
     "Intensity":9
   },
   {
     "Date":"2015-11-14",
-    "Type":"Gym",
+    "Type":"StrengthTraining",
     "Intensity":5,
     "Cardio":{
     	"Type":"Treadmill",
@@ -191,22 +191,22 @@
   },
   {
     "Date":"2015-11-16",
-    "Type":"Gym",
+    "Type":"StrengthTraining",
     "Intensity":9
   },
   {
     "Date":"2015-11-17",
-    "Type":"Gym",
+    "Type":"StrengthTraining",
     "Intensity":4
   },
   {
     "Date":"2015-11-19",
-    "Type":"Gym",
+    "Type":"StrengthTraining",
     "Intensity":5
   },
   {
     "Date":"2015-11-21",
-    "Type":"Gym",
+    "Type":"StrengthTraining",
     "Intensity":2
   },
   {
@@ -216,12 +216,12 @@
   },
   {
     "Date":"2015-11-23",
-    "Type":"Gym",
+    "Type":"StrengthTraining",
     "Intensity":4
   },
   {
     "Date":"2015-11-24",
-    "Type":"Gym",
+    "Type":"StrengthTraining",
     "Intensity":8
   },
   {
@@ -231,18 +231,23 @@
     "Intensity":8
   },
   {
+    "Date":"2015-11-30",
+    "Type":"Running",
+    "Intensity":7
+  },
+  {
     "Date":"2015-12-01",
     "Type":"Hiking",
     "Intensity":5
   },
   {
     "Date":"2015-12-02",
-    "Type":"Gym",
+    "Type":"StrengthTraining",
     "Intensity":9
   },
   {
     "Date":"2015-12-04",
-    "Type":"Gym",
+    "Type":"StrengthTraining",
     "Intensity":7
   },
   {
@@ -252,32 +257,42 @@
   },
   {
     "Date":"2015-12-07",
-    "Type":"Gym",
+    "Type":"StrengthTraining",
     "Intensity":8
   },
   {
     "Date":"2015-12-08",
-    "Type":"Gym",
+    "Type":"StrengthTraining",
     "Intensity":4
   },
   {
     "Date":"2015-12-09",
-    "Type":"Rock Gym",
+    "Type":"RockClimbing",
     "Intensity":8
   },
   {
     "Date":"2015-12-10",
-    "Type":"Gym",
+    "Type":"StrengthTraining",
     "Intensity":3
   },
   {
     "Date":"2015-12-14",
-    "Type":"Gym",
+    "Type":"StrengthTraining",
     "Intensity":7
   },
   {
     "Date":"2015-12-15",
     "Type":"Basketball",
     "Intensity":5
+  },
+  {
+    "Date":"2015-12-16",
+    "Type":"Running",
+    "Intensity":10
+  },
+  {
+    "Date":"2015-12-17",
+    "Type":"Basketball",
+    "Intensity":10
   }
 ]

@@ -8,9 +8,10 @@
     var typesOfExercise = 
       {
         Basketball:   {color:"gold"},
-        Gym:          {color:"#0074D9"},
+        StrengthTraining:          {color:"#0074D9"},
         RockClimbing: {color:"#001f3f"},
-        Hiking:        {color:"#FF851B"}
+        Hiking:       {color:"#FF851B"},
+        Running:      {color:"#2ECC40"}
       }
     var defaultExerciseColor = "purple";
 
@@ -71,8 +72,6 @@
           .style("fill", function(d) { 
           
             for(var type in typesOfExercise){
-              console.log(type);
-              //console.log("Do they equal? " + nest[d][0].Type + "?=" + type.name);
               if (nest[d][0].Type == type){
                 return typesOfExercise[type].color;
               }
@@ -133,6 +132,13 @@
         .style("fill","gold")
         .attr("y", 3 * cellSize);
       legend
+        .append("rect")
+        .attr("class","day")
+        .attr("width",cellSize)
+        .attr("height",cellSize)
+        .style("fill","#2ECC40")
+        .attr("y", 4 * cellSize);
+      legend
         .append("text")
         .text("Type of Exercise")
         .attr("x",0)
@@ -144,7 +150,7 @@
         .attr("y",cellSize);
       legend
         .append("text")
-        .text("Gym")
+        .text("Strength Training")
         .attr("x",cellSize + 5)
         .attr("y",2 * cellSize);
       legend
@@ -157,6 +163,11 @@
         .text("Basketball")
         .attr("x",cellSize + 5)
         .attr("y",4 * cellSize);
+      legend
+        .append("text")
+        .text("Running")
+        .attr("x",cellSize + 5)
+        .attr("y",5 * cellSize);
 
         // Percent Body Fat Box
         var bodyFatId = "#GoalPercentBodyFat";
