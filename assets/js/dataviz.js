@@ -148,7 +148,6 @@
         var bodyFatVerticalCenter = (defaultSVGHeight / 2);
 
         var article_bodyFat = addArticle(bodyFatId, bodyFatWidth);
-
         var svg_bodyFat = article_bodyFat
             .append("svg")
             .attr("width",bodyFatWidth)
@@ -268,7 +267,7 @@
           .attr("y",defaultSVGVerticalCenter)
           .attr("x","150")
           .style("font-size","100px")
-          .style("fill","#E82C0C");
+          .style("fill","#0074D9");
 
         // Pull Ups
         var pullUpsId = "#GoalPullUps";

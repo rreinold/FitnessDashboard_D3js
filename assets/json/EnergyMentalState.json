@@ -79,5 +79,14 @@
 	"Energy_Exerted":9,
 	"Anxiety":2,
 	"Confidence":8
+},
+{
+	"Date":"2015-12-18",
+	"Sleep_Length":9.5,
+	"Sleep_Quality":9,
+	"Energy_Available":7,
+	"Energy_Exerted":6,
+	"Anxiety":3,
+	"Confidence":8
 }
 ]

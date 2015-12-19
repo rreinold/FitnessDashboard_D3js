@@ -294,5 +294,10 @@
     "Date":"2015-12-17",
     "Type":"Basketball",
     "Intensity":10
+  },
+  {
+    "Date":"2015-12-18",
+    "Type":"StrengthTraining",
+    "Intensity":6
   }
 ]
