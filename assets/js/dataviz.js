@@ -2,7 +2,7 @@
         height = 200,
         cellSize = 18; // cell size
 
-    var defaultSVGHeight = 180;
+    var defaultSVGHeight = 170;
     var defaultSVGVerticalCenter = (defaultSVGHeight / 2);
 
     var percent = d3.format(".1%"),
@@ -27,15 +27,15 @@
         .attr("width", width)
         .attr("height", height)
       .append("g")
-        .attr("transform", "translate(-375,30)");
+        .attr("transform", "translate(-500,30)");
 
     svg.append("text")
-        .attr("transform", "translate(550," + cellSize * 3.5 + ")rotate(-90)")
+        .attr("transform", "translate(690," + cellSize * 3.5 + ")rotate(-90)")
         .style("text-anchor", "middle")
-        .text(function(d) { return "Aug " + d; });
+        .text(function(d) { return "4Q " + d; });
 
     var rect = svg.selectAll(".day")
-        .data(function(d) { return d3.time.days(new Date(d, 7, 1), new Date()); })
+        .data(function(d) { return d3.time.days(new Date(d, 9, 1), new Date()); })
       .enter().append("rect")
         .attr("class", "day")
         .attr("width", cellSize)
@@ -48,7 +48,7 @@
         .text(function(d) { return d; });
 
     svg.selectAll(".month")
-        .data(function(d) { return d3.time.months(new Date(d, 7, 1), new Date(d + 1, 0, 1)); })
+        .data(function(d) { return d3.time.months(new Date(d, 9, 1), new Date(d + 1, 0, 1)); })
       .enter().append("path")
         .attr("class", "month")
         .attr("d", monthPath);
