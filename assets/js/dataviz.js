@@ -247,7 +247,8 @@
         .append("text")
           .text(benchMaxValue)
           .attr("text-anchor","middle")
-          .attr("y","130")
+          .attr("dominant-baseline", "central")
+          .attr("y",defaultSVGVerticalCenter)
           .attr("x","280")
           .style("font-size","100px")
           .style("fill","#0074D9");
@@ -262,10 +263,11 @@
           .attr("height",275)
         .append("text")
           .text(freeThrowsValue)
-          // .attr("text-anchor","middle")
-          .attr("y","130")
-          .attr("x","15")
-          .style("font-size","150px")
+          .attr("text-anchor","middle")
+          .attr("dominant-baseline", "central")
+          .attr("y",defaultSVGVerticalCenter)
+          .attr("x","150")
+          .style("font-size","100px")
           .style("fill","#E82C0C");
 
         // Pull Ups
@@ -278,10 +280,11 @@
           .attr("height",275)
         .append("text")
           .text(pullUpsValue)
-          // .attr("text-anchor","middle")
-          .attr("y","130")
-          .attr("x","70")
-          .style("font-size","150px")
+          .attr("text-anchor","middle")
+          .attr("dominant-baseline", "central")
+          .attr("y",defaultSVGVerticalCenter)
+          .attr("x","150")
+          .style("font-size","100px")
           .style("fill","#E82C0C");
 
     // var gaugeText = d3.select("#goal_pcf").append("text").text("These gauges will show my fitness goal progress.").attr("class","header");
