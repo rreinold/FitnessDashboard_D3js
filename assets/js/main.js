@@ -51,7 +51,7 @@ var parallelism = (function($) { var _ = {
 						verticalNudge: -50,
 
 					// Maximum number of rows.
-						maxRows: 3,
+						maxRows: 10,
 
 					// Minimum number of rows.
 						minRows: 1,
