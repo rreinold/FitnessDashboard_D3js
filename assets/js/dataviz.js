@@ -179,7 +179,7 @@
             .attr("y",defaultSVGVerticalCenter)
             .attr("x",(bodyFatWidth * 11 / 16))
             .style("font-size","120px")
-            .style("fill","#0074D9");
+            .style("fill","#FF851B");
 
           article_bodyFat
           .append("h2")
@@ -250,7 +250,7 @@
           .attr("y",defaultSVGVerticalCenter)
           .attr("x","280")
           .style("font-size","100px")
-          .style("fill","#0074D9");
+          .style("fill","#FF851B");
 
         // Free Throws
         var freeThrowsId = "#GoalFreeThrows";
