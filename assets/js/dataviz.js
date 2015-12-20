@@ -352,7 +352,8 @@
         var id_pullUps = "#GoalPullUps";
         var width_pullUps = 300;
         var pullUpsValue = 10;
-
+        var pullUpsManX = (width_pullUps / 16);
+        var pullUpsManY = -12
         var article_pullUps = addArticle(id_pullUps, width_pullUps);
         var svg_pullUps = article_pullUps
                 .append("svg")
@@ -361,8 +362,7 @@
 
         svg_pullUpsMan = svg_pullUps
           .append("g")
-          .attr("transform","translate(" + (width_pullUps / 16) + "," + -8 + ") scale(1.5)")
-          .append("g");
+          .attr("transform","translate(" + pullUpsManX + "," + pullUpsManY + ") scale(1.5)")
         svg_pullUpsMan
           .append("path")
           .attr("fill","#000000")
@@ -381,6 +381,18 @@
           article_pullUps
             .append("h2")
             .text("Pull Ups - Current: " + pullUpsValue + " / Target: 20");
+
+(function repeat() {
+        svg_pullUpsMan
+            .transition()
+            .duration(1200)
+            .delay(5000)
+            .attr("transform","translate(" + pullUpsManX + "," + (pullUpsManY - 30) + ") scale(1.5)")
+            .transition()
+            .attr("transform","translate(" + pullUpsManX + "," + (pullUpsManY) + ") scale(1.5)")
+            .each("end", repeat);
+  })();
+
 
           article_nextGoal = addArticle("",300);
           article_nextGoal.append("h2").text("Next Goal...");
