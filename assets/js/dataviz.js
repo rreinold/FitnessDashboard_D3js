@@ -254,20 +254,28 @@
 
         // Free Throws
         var freeThrowsId = "#GoalFreeThrows";
-        var freeThrowsValue = "40%";
-        d3
-          .select(freeThrowsId)
-        .append("svg")
-          .attr("width",300)
-          .attr("height",275)
-        .append("text")
-          .text(freeThrowsValue)
-          .attr("text-anchor","middle")
-          .attr("dominant-baseline", "central")
-          .attr("y",defaultSVGVerticalCenter)
-          .attr("x","150")
-          .style("font-size","100px")
-          .style("fill","#0074D9");
+        var freeThrowsValue;
+
+        d3.json("./assets/json/Basketball.json", function(error, data) {
+          if (error) throw error;
+
+          freeThrowsValue = percent(data[1]["FreeThrowPercentage"]);
+
+          d3
+            .select(freeThrowsId)
+          .append("svg")
+            .attr("width",300)
+            .attr("height",275)
+          .append("text")
+            .text(freeThrowsValue)
+            .attr("text-anchor","middle")
+            .attr("dominant-baseline", "central")
+            .attr("y",defaultSVGVerticalCenter)
+            .attr("x","150")
+            .style("font-size","100px")
+            .style("fill","#3D9970");
+
+        });
 
         // Pull Ups
         var pullUpsId = "#GoalPullUps";
