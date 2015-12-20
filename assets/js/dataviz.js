@@ -64,8 +64,10 @@
         .key(function(d) { return d.dd; })
         .map(data);
 
-      rect.filter(function(d) { return d in nest; })
-
+      rect
+          .filter(function(d) { return d in nest; })
+          .transition()
+          .delay(2000)
           .style("fill", function(d) { 
           
             for(var type in typesOfExercise){
@@ -286,7 +288,7 @@
 
         // Free Throws
         var id_freeThrows = "#GoalFreeThrows";
-        var width_freeThrows = 400;
+        var width_freeThrows = 350;
         var freeThrowsValue;
 
         var article_freeThrows= addArticle(id_freeThrows, width_freeThrows);
