@@ -150,6 +150,7 @@
         var bodyFatVerticalCenter = (defaultSVGHeight / 2);
 
         var article_bodyFat = addArticle(bodyFatId, bodyFatWidth);
+
         var svg_bodyFat = article_bodyFat
             .append("svg")
             .attr("width",bodyFatWidth)

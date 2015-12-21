@@ -17,7 +17,7 @@ Track and display any significant exercise performed. This includes gym sessions
 Full Body composition analysis performed at NutriShop Austin-South on a rough weekly schedule.
 
 ####Diet
-Maintain high-level record of eating habits.
+Maintain high-level record of eating habits. Leverage MyFitnessPal API to pull data about my diet.
 
 ##Credit
 
