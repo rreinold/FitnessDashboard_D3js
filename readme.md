@@ -20,6 +20,10 @@ Full Body composition analysis performed at NutriShop Austin-South on a rough we
 Maintain high-level record of eating habits.
 
 ##Credit
+
+Credit to Mike Bostock for his D3 library, and his line chart example
+http://bl.ocks.org/mbostock/3883245
+
 Credit to ameyms for D3 Gauge - Part Deux
 http://bl.ocks.org/ameyms/9184728
 
