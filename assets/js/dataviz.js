@@ -171,9 +171,9 @@
         d3.json("./assets/json/BodyComposition.json", function(error, data) {
           if (error) throw error;
           var targetBodyFat = percent(data[0]["Target"]);
-          var initialBodyFat = percent(data[1]["Obesity Analysis"]["Percent Body Fat"]);
+          var initialBodyFat = percent(data[1]["Percent Body Fat"]);
           var mostRecentIndex = data.length - 1;
-          var bodyFatPercentage = percent(data[mostRecentIndex]["Obesity Analysis"]["Percent Body Fat"]);
+          var bodyFatPercentage = percent(data[mostRecentIndex]["Percent Body Fat"]);
 
           svg_bodyFat
           .append("text")
