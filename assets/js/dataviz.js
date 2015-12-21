@@ -170,23 +170,38 @@
       
         d3.json("./assets/json/BodyComposition.json", function(error, data) {
           if (error) throw error;
-
-          var mostRecentIndex = data.length - 1
+          var targetBodyFat = percent(data[0]["Target"]);
+          var initialBodyFat = percent(data[1]["Obesity Analysis"]["Percent Body Fat"]);
+          var mostRecentIndex = data.length - 1;
           var bodyFatPercentage = percent(data[mostRecentIndex]["Obesity Analysis"]["Percent Body Fat"]);
 
           svg_bodyFat
           .append("text")
-            .text(bodyFatPercentage)
-            .attr("text-anchor","middle")
-            .attr("dominant-baseline", "central")
-            .attr("y",defaultSVGVerticalCenter)
-            .attr("x",(bodyFatWidth * 10 / 16))
-            .style("font-size","100px")
+            .text("Initial:     " + initialBodyFat)
+            .attr("y",defaultSVGHeight * 2 / 5)
+            .attr("x",(bodyFatWidth * 5 / 16))
+            .style("font-size","40px")
+            .style("fill","#E82C0C");
+
+          svg_bodyFat
+          .append("text")
+            .text("Current: " + bodyFatPercentage)
+            .attr("y",defaultSVGHeight * 3 / 5)
+            .attr("x",(bodyFatWidth * 5 / 16))
+            .style("font-size","40px")
             .style("fill","#FF851B");
+
+          svg_bodyFat
+          .append("text")
+            .text("Target: " + targetBodyFat)
+            .attr("y",defaultSVGHeight * 4 / 5)
+            .attr("x",(bodyFatWidth * 5 / 16))
+            .style("font-size","40px")
+            .style("fill","#3D9970");
 
           article_bodyFat
           .append("h2")
-            .text("Percent Body Fat - Current: "+ bodyFatPercentage + " / Target: 12.0%");
+            .text("Percent Body Fat");
         });
 
         // 1 Mile Time box
@@ -310,7 +325,7 @@
         d3.json("./assets/json/Basketball.json", function(error, data) {
           if (error) throw error;
 
-          var mostRecentIndex = data.length - 1
+          var mostRecentIndex = data.length - 1;
           freeThrowsValue = percent(data[mostRecentIndex]["Hit"] / data[mostRecentIndex]["Total"]);
           freeThrowsTarget = percent(data[0]["Target"]);
 
@@ -326,7 +341,7 @@
 
           article_freeThrows
             .append("h2")
-            .text("Free Throw % - Current: " + freeThrowsValue + " / Target: " + freeThrowsTarget)
+            .text("Free Throw % - Current: " + freeThrowsValue + " / Target: " + freeThrowsTarget);
 
         });
 
@@ -356,7 +371,7 @@
         var id_pullUps = "#GoalPullUps";
         var width_pullUps = 300;
         var pullUpsValue = 10;
-        var pullUpsManX = (width_pullUps / 16);
+        var pullUpsManX = (width_pullUps / 32);
         var pullUpsManY = -12
         var article_pullUps = addArticle(id_pullUps, width_pullUps);
         var svg_pullUps = article_pullUps
