@@ -67,7 +67,7 @@
       rect
           .filter(function(d) { return d in nest; })
           .transition()
-          .delay(2000)
+          .delay(1200)
           .style("fill", function(d) { 
           
             for(var type in typesOfExercise){
@@ -171,7 +171,8 @@
         d3.json("./assets/json/BodyComposition.json", function(error, data) {
           if (error) throw error;
 
-          var bodyFatPercentage = percent(data[0]["Obesity Analysis"]["Percent Body Fat"]);
+          var mostRecentIndex = data.length - 1
+          var bodyFatPercentage = percent(data[mostRecentIndex]["Obesity Analysis"]["Percent Body Fat"]);
 
           svg_bodyFat
           .append("text")
@@ -235,8 +236,8 @@
 
         // 10 Rep Bench Max Box
         var id_benchMax = "#Goal1MileTime";
-        var value_benchMax = 145
-        var units_benchMax = "lbs"
+        var value_benchMax = 150;
+        var units_benchMax = "lbs";
         var width_benchMax = 400;
 
         var article_benchMax = addArticle(id_benchMax, width_benchMax);
@@ -309,7 +310,8 @@
         d3.json("./assets/json/Basketball.json", function(error, data) {
           if (error) throw error;
 
-          freeThrowsValue = percent(data[2]["FreeThrowPercentage"]);
+          var mostRecentIndex = data.length - 1
+          freeThrowsValue = percent(data[mostRecentIndex]["Hit"] / data[mostRecentIndex]["Total"]);
           freeThrowsTarget = percent(data[0]["Target"]);
 
           svg_freeThrows

@@ -8,6 +8,12 @@
 },
 {
 	"Date":"2015-12-19",
-	"FreeThrowPercentage":0.60
+	"Hit":12,
+	"Total":20
+},
+{
+	"Date":"2015-12-20",
+	"Hit":20,
+	"Total":50
 }
 ]

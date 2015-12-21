@@ -1,5 +1,390 @@
-[{
-		"Date":"2015-08-01T00:00:00.000Z",
+[
+{
+		"Date":"2015-09-02T00:00:00.000Z",
+		"Body Composition Analysis":{
+			"Weight":170.4,
+			"Total Body Water":105.4,
+			"Dry Lean Mass":38.1,
+			"Body Fat Mass":26.9,
+			"Lean Body Mass":143.5
+		},
+		"Muscle-Fat Analysis":{
+			"Weight":170.4,
+			"Skeletal Muscle Mass":81.8,
+			"Body Fat Mass":26.9
+		},
+		"Obesity Analysis":{
+			"BMI":25.1,
+			"Percent Body Fat":0.157
+		},
+		"Segmented Lean Analysis":{
+			"Right Arm":{
+				"Mass":8.95,
+				"Percent":121.7
+			},
+			"Left Arm":{
+				"Mass":8.75,
+				"Percent":118.8
+			},
+			"Trunk":{
+				"Mass":66.4,
+				"Percent":113.1
+			},
+			"Right Leg":{
+				"Mass":20.68,
+				"Percent":101.0
+			},
+			"Left Leg":{
+				"Mass":20.70,
+				"Percent":101.1
+			}
+		},
+		"Body Fat Differential":{
+			"Body Fat Mass Differential":-1.5,
+			"Lean Body Mass Differential":0
+		},
+		"Basal Metabolic Rate":{
+			"Rate":1777
+		}
+},
+{
+"Date":"2015-09-10T00:00:00.000Z",
+		"Body Composition Analysis":{
+			"Weight":166.4,
+			"Total Body Water":104.7,
+			"Dry Lean Mass":38.1,
+			"Body Fat Mass":23.5,
+			"Lean Body Mass":142.9
+		},
+		"Muscle-Fat Analysis":{
+			"Weight":166.4,
+			"Skeletal Muscle Mass":81.8,
+			"Body Fat Mass":23.5
+		},
+		"Obesity Analysis":{
+			"BMI":24.6,
+			"Percent Body Fat":14.2
+		},
+		"Segmented Lean Analysis":{
+			"Right Arm":{
+				"Mass":8.88,
+				"Percent":121.4
+			},
+			"Left Arm":{
+				"Mass":8.62,
+				"Percent":118
+			},
+			"Trunk":{
+				"Mass":65.9,
+				"Percent":113.0
+			},
+			"Right Leg":{
+				"Mass":21.14,
+				"Percent":104.0
+			},
+			"Left Leg":{
+				"Mass":20.92,
+				"Percent":102.9
+			}
+		},
+		"Body Fat Differential":{
+			"Body Fat Mass Differential":0,
+			"Lean Body Mass Differential":0
+		},
+		"Basal Metabolic Rate":{
+			"Rate":1769
+		}
+},
+{
+"Date":"2015-09-17T00:00:00.000Z",
+		"Body Composition Analysis":{
+			"Weight":165.2,
+			"Total Body Water":103.2,
+			"Dry Lean Mass":37.7,
+			"Body Fat Mass":24.3,
+			"Lean Body Mass":140.9
+		},
+		"Muscle-Fat Analysis":{
+			"Weight":165.2,
+			"Skeletal Muscle Mass":80.7,
+			"Body Fat Mass":24.3
+		},
+		"Obesity Analysis":{
+			"BMI":24.4,
+			"Percent Body Fat":14.7
+		},
+		"Segmented Lean Analysis":{
+			"Right Arm":{
+				"Mass":8.66,
+				"Percent":118.6
+			},
+			"Left Arm":{
+				"Mass":8.42,
+				"Percent":115.3
+			},
+			"Trunk":{
+				"Mass":64.8,
+				"Percent":111.4
+			},
+			"Right Leg":{
+				"Mass":20.61,
+				"Percent":101.6
+			},
+			"Left Leg":{
+				"Mass":20.53,
+				"Percent":101.2
+			}
+		},
+		"Body Fat Differential":{
+			"Body Fat Mass Differential":0,
+			"Lean Body Mass Differential":0
+		},
+		"Basal Metabolic Rate":{
+			"Rate":1751
+		}
+},
+{
+"Date":"2015-09-27T00:00:00.000Z",
+		"Body Composition Analysis":{
+			"Weight":167.4,
+			"Total Body Water":103.8,
+			"Dry Lean Mass":37.9,
+			"Body Fat Mass":25.7,
+			"Lean Body Mass":141.8
+		},
+		"Muscle-Fat Analysis":{
+			"Weight":167.4,
+			"Skeletal Muscle Mass":81.1,
+			"Body Fat Mass":25.7
+		},
+		"Obesity Analysis":{
+			"BMI":24.7,
+			"Percent Body Fat":15.3
+		},
+		"Segmented Lean Analysis":{
+			"Right Arm":{
+				"Mass":8.77,
+				"Percent":119.7
+			},
+			"Left Arm":{
+				"Mass":8.55,
+				"Percent":116.8
+			},
+			"Trunk":{
+				"Mass":65.4,
+				"Percent":111.9
+			},
+			"Right Leg":{
+				"Mass":20.50,
+				"Percent":100.7
+			},
+			"Left Leg":{
+				"Mass":20.37,
+				"Percent":100.0
+			}
+		},
+		"Body Fat Differential":{
+			"Body Fat Mass Differential":0,
+			"Lean Body Mass Differential":0
+		},
+		"Basal Metabolic Rate":{
+			"Rate":1759
+		}
+},
+{
+"Date":"2015-10-25T00:00:00.000Z",
+		"Body Composition Analysis":{
+			"Weight":169.1,
+			"Total Body Water":102.7,
+			"Dry Lean Mass":37.7,
+			"Body Fat Mass":28.6,
+			"Lean Body Mass":140.4
+		},
+		"Muscle-Fat Analysis":{
+			"Weight":169.1,
+			"Skeletal Muscle Mass":80.2,
+			"Body Fat Mass":28.6
+		},
+		"Obesity Analysis":{
+			"BMI":25,
+			"Percent Body Fat":16.9
+		},
+		"Segmented Lean Analysis":{
+			"Right Arm":{
+				"Mass":8.44,
+				"Percent":114.9
+			},
+			"Left Arm":{
+				"Mass":8.18,
+				"Percent":111.4
+			},
+			"Trunk":{
+				"Mass":63.6,
+				"Percent":108.5
+			},
+			"Right Leg":{
+				"Mass":20.24,
+				"Percent":99.1
+			},
+			"Left Leg":{
+				"Mass":20.19,
+				"Percent":98.9
+			}
+		},
+		"Body Fat Differential":{
+			"Body Fat Mass Differential":0,
+			"Lean Body Mass Differential":0
+		},
+		"Basal Metabolic Rate":{
+			"Rate":1747
+		}
+},
+{
+"Date":"2015-10-15T00:00:00.000Z",
+		"Body Composition Analysis":{
+			"Weight":166.4,
+			"Total Body Water":104.5,
+			"Dry Lean Mass":37.9,
+			"Body Fat Mass":23.9,
+			"Lean Body Mass":142.4
+		},
+		"Muscle-Fat Analysis":{
+			"Weight":166.4,
+			"Skeletal Muscle Mass":81.1,
+			"Body Fat Mass":23.9
+		},
+		"Obesity Analysis":{
+			"BMI":24.6,
+			"Percent Body Fat":14.3
+		},
+		"Segmented Lean Analysis":{
+			"Right Arm":{
+				"Mass":8.75,
+				"Percent":119.7
+			},
+			"Left Arm":{
+				"Mass":8.51,
+				"Percent":116.3
+			},
+			"Trunk":{
+				"Mass":64.9,
+				"Percent":111.4
+			},
+			"Right Leg":{
+				"Mass":20.94,
+				"Percent":103.0
+			},
+			"Left Leg":{
+				"Mass":20.83,
+				"Percent":102.4
+			}
+		},
+		"Body Fat Differential":{
+			"Body Fat Mass Differential":0,
+			"Lean Body Mass Differential":0
+		},
+		"Basal Metabolic Rate":{
+			"Rate":1766
+		}
+},
+{
+"Date":"2015-11-15T00:00:00.000Z",
+		"Body Composition Analysis":{
+			"Weight":166.1,
+			"Total Body Water":106.3,
+			"Dry Lean Mass":38.4,
+			"Body Fat Mass":21.5,
+			"Lean Body Mass":144.6
+		},
+		"Muscle-Fat Analysis":{
+			"Weight":166.1,
+			"Skeletal Muscle Mass":82.7,
+			"Body Fat Mass":21.5
+		},
+		"Obesity Analysis":{
+			"BMI":24.5,
+			"Percent Body Fat":12.9
+		},
+		"Segmented Lean Analysis":{
+			"Right Arm":{
+				"Mass":9.00,
+				"Percent":123.0
+			},
+			"Left Arm":{
+				"Mass":8.64,
+				"Percent":118.4
+			},
+			"Trunk":{
+				"Mass":66.1,
+				"Percent":113.4
+			},
+			"Right Leg":{
+				"Mass":21.58,
+				"Percent":106.2
+			},
+			"Left Leg":{
+				"Mass":21.47,
+				"Percent":105.7
+			}
+		},
+		"Body Fat Differential":{
+			"Body Fat Mass Differential":0,
+			"Lean Body Mass Differential":0
+		},
+		"Basal Metabolic Rate":{
+			"Rate":1787
+		}
+},
+{
+		"Date":"2015-11-22T00:00:00.000Z",
+		"Body Composition Analysis":{
+			"Weight":163.8,
+			"Total Body Water":104.1,
+			"Dry Lean Mass":37.9,
+			"Body Fat Mass":21.8,
+			"Lean Body Mass":142
+		},
+		"Muscle-Fat Analysis":{
+			"Weight":163.8,
+			"Skeletal Muscle Mass":81.1,
+			"Body Fat Mass":21.8
+		},
+		"Obesity Analysis":{
+			"BMI":24.2,
+			"Percent Body Fat":13.3
+		},
+		"Segmented Lean Analysis":{
+			"Right Arm":{
+				"Mass":8.71,
+				"Percent":119.7
+			},
+			"Left Arm":{
+				"Mass":8.27,
+				"Percent":113.5
+			},
+			"Trunk":{
+				"Mass":64.3,
+				"Percent":110.8
+			},
+			"Right Leg":{
+				"Mass":20.99,
+				"Percent":103.8
+			},
+			"Left Leg":{
+				"Mass":20.92,
+				"Percent":103.4
+			}
+		},
+		"Body Fat Differential":{
+			"Body Fat Mass Differential":0,
+			"Lean Body Mass Differential":0
+		},
+		"Basal Metabolic Rate":{
+			"Rate":1762
+		}
+},
+{
+		"Date":"2015-12-10T00:00:00.000Z",
 		"Body Composition Analysis":{
 			"Weight":165.8,
 			"Total Body Water":104.5,
@@ -45,4 +430,53 @@
 		"Basal Metabolic Rate":{
 			"Rate":1767
 		}
-}]
+},
+{
+		"Date":"2015-12-20T00:00:00.000Z",
+		"Body Composition Analysis":{
+			"Weight":166.7,
+			"Total Body Water":105.8,
+			"Dry Lean Mass":38.6,
+			"Body Fat Mass":22.3,
+			"Lean Body Mass":144.4
+		},
+		"Muscle-Fat Analysis":{
+			"Weight":166.7,
+			"Skeletal Muscle Mass":82.2,
+			"Body Fat Mass":22.3
+		},
+		"Obesity Analysis":{
+			"BMI":24.6,
+			"Percent Body Fat":0.134
+		},
+		"Segmented Lean Analysis":{
+			"Right Arm":{
+				"Mass":9.04,
+				"Percent":123.5
+			},
+			"Left Arm":{
+				"Mass":8.69,
+				"Percent":118.7
+			},
+			"Trunk":{
+				"Mass":66.3,
+				"Percent":113.6
+			},
+			"Right Leg":{
+				"Mass":20.72,
+				"Percent":101.9
+			},
+			"Left Leg":{
+				"Mass":20.79,
+				"Percent":102.3
+			}
+		},
+		"Body Fat Differential":{
+			"Body Fat Mass Differential":0,
+			"Lean Body Mass Differential":0
+		},
+		"Basal Metabolic Rate":{
+			"Rate":1785
+		}
+	}
+]
