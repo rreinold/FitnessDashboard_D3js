@@ -208,48 +208,6 @@
 		}
 },
 {
-"Date":"2015-10-25",
-		"Weight":169.1,
-		"Total Body Water":102.7,
-		"Dry Lean Mass":37.7,
-		"Body Fat Mass":28.6,
-		"Lean Body Mass":140.4,
-		"Weight":169.1,
-		"Skeletal Muscle Mass":80.2,
-		"Body Fat Mass":28.6,
-		"BMI":25,
-		"Percent Body Fat":0.169,
-		"Segmented Lean Analysis":{
-			"Right Arm":{
-				"Mass":8.44,
-				"Percent":114.9
-			},
-			"Left Arm":{
-				"Mass":8.18,
-				"Percent":111.4
-			},
-			"Trunk":{
-				"Mass":63.6,
-				"Percent":108.5
-			},
-			"Right Leg":{
-				"Mass":20.24,
-				"Percent":99.1
-			},
-			"Left Leg":{
-				"Mass":20.19,
-				"Percent":98.9
-			}
-		},
-		"Body Fat Differential":{
-			"Body Fat Mass Differential":0,
-			"Lean Body Mass Differential":0
-		},
-		"Basal Metabolic Rate":{
-			"Rate":1747
-		}
-},
-{
 "Date":"2015-11-15",
 		"Weight":166.1,
 		"Total Body Water":106.3,
