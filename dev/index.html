@@ -64,7 +64,7 @@ var graphLineChart = function(id,file,yValue){
 	  .append("g")
 	    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-	 const filename = "www.robreinold.com/dev/JavaScript_FitnessVisualizer/assets/json/"+file;
+	 const filename = "//www.robreinold.com/dev/JavaScript_FitnessVisualizer/assets/json/"+file;
 	d3.json(filename, function(error, data) {
 	  if (error) throw error;
 
