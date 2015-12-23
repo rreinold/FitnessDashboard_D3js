@@ -174,7 +174,7 @@
           // TODO Find place for this in json
           // var targetBodyFat = percent(data[0]["Target"]);
           var targetBodyFat = percent(.12);
-          var initialBodyFat = percent(data[1]["Percent Body Fat"]);
+          var initialBodyFat = percent(data[0]["Percent Body Fat"]);
           var mostRecentIndex = data.length - 1;
           var bodyFatPercentage = percent(data[mostRecentIndex]["Percent Body Fat"]);
 
@@ -249,7 +249,7 @@
               .style("fill","#3D9970");
           article_oneMileTime
             .append("h2")
-            .text("1 Mile Time - Current: " + mileTimeValue + " / Target: 6:00");
+            .text("1 Mile Time - Current: " + mileTimeValue + " / Target: 6:40");
         });
 
         // 10 Rep Bench Max Box
