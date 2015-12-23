@@ -26,12 +26,23 @@ body {
   stroke-width: 2px;
 }
 
+.bar {
+  fill: steelblue;
+}
+
+.bar:hover {
+  fill: brown;
+}
+
 </style>
 <body>
 <!-- TODO: Ensure d3.min.js is comaptible with visual, rather than d3.v3.min.js -->
 <script src="assets/js/d3.min.js"></script>
 <script>
-var graphLineChart = function(id,file,yValue){
+var graphLineChart = function(id, file1, file2, yValue, exerciseTypes){
+
+	const jsonRoot = "assets/json/";
+
 	var margin = {top: 20, right: 20, bottom: 30, left: 50},
 	    width = 960 - margin.left - margin.right,
 	    height = 500 - margin.top - margin.bottom;
@@ -40,12 +51,15 @@ var graphLineChart = function(id,file,yValue){
 
 	var parseDate = d3.time.format("%Y-%m-%d").parse;
 
-	// Notice the time package, for scaling non-consecutive dates
+	// Notice the time package, for mapping non-consecutive dates
 	var x = d3.time.scale()
 	    .range([0, width]);
 
 	var y = d3.scale.linear()
 	    .range([height, 0]);
+
+	var y2 = d3.scale.linear()
+		.range([height, 0]);
 
 	var xAxis = d3.svg.axis()
 	    .scale(x)
@@ -65,14 +79,13 @@ var graphLineChart = function(id,file,yValue){
 	  .append("g")
 	    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-	 const filename = "assets/json/"+file;
-	d3.json(filename, function(error, data) {
+	 var filename1 = jsonRoot + file1;
+	d3.json(filename1, function(error, data) {
 	  if (error) throw error;
 
 	  data.forEach(function(d) {
 	    d["Date"] = parseDate(d["Date"]);
 	    d[yValue] = +d[yValue];
-	    console.log(d[yValue]);
 	  });
 
 	  x.domain(d3.extent(data, function(d) { return d["Date"]; }));
@@ -98,9 +111,39 @@ var graphLineChart = function(id,file,yValue){
 	      .attr("class", "line")
 	      .attr("d", line);
 	});
+	var filename2 = jsonRoot + file2;
+	d3.json(filename2, function(error, data) {
+	  if (error) throw error;
+
+	  svg.selectAll(".bar")
+      .data(data)
+      .enter().append("rect")
+      .attr("class", "bar")
+      .attr("x", function(d) { 
+      	return x(parseDate(d["Date"]));
+      })
+
+      // TODO repair this workaround with x.rangeBand()
+      .attr("width", 8)
+      .attr("y", function(d) {
+      	return height / 2;
+
+      	// for(var type in exerciseTypes){
+      	// 	if(d.Type == exerciseTypes[type]){
+      	// 		// console.log("type: " + d.Type + " at " + d.Intensity);
+      	// 		return y2(d.Intensity);
+      	// 	}
+      	// }
+      	return y2(0);
+      })
+      .attr("height", function(d) { 
+      	console.log("Height: " + height + "Y: " + y2(d.Intensity));
+      	return 50;
+      });
+  });
 }
 
-graphLineChart("body","BodyComposition.json","Percent Body Fat");
+graphLineChart("body","BodyComposition.json","Exercise.json","Percent Body Fat",["Running","Hiking","Basketball"]);
 
 // graphLineChart("body","BodyComposition.json","Weight");
 // graphLineChart("body","BodyComposition.json","Skeletal Muscle Mass");

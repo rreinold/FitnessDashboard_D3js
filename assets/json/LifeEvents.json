@@ -1,0 +1,21 @@
+[
+{
+	"Date_Begin":"2015-11-18",
+	"Date_End":"2015-12-1",
+	"Desc":"Going great w Kayla",
+	"Up":["Confidence","Energy_Exerted"]
+	
+	},
+{
+	"Date_Begin":"2015-12-07",
+	"Date_End":"2015-12-13",
+	"Desc":"Dylan in England",
+	"Down":["Confidence","Energy_Exerted"]
+},
+{
+	"Date_Begin":"2015-12-07",
+	"Date_End":"2015-12-10",
+	"Desc":"Rough patch w Kayla",
+	"Down":["Confidence","Energy_Exerted"]
+}
+]
