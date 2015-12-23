@@ -35,7 +35,13 @@ body {
 }
 
 </style>
-<body>
+<h1> 
+
+	Graph #1: Body Fat Percentage, with an overlapping box for each type of cardio events: Running, Hiking, Basketball 
+	<br>
+	Graph #2: Muscle Mass, with an overlapping box for each type of cardio events: Strength Training
+</h1>
+	<body>
 <!-- TODO: Ensure d3.min.js is comaptible with visual, rather than d3.v3.min.js -->
 <script src="assets/js/d3.min.js"></script>
 <script>
@@ -134,17 +140,30 @@ var graphLineChart = function(id, file1, file2, yValue, exerciseTypes){
       	// 		return y2(d.Intensity);
       	// 	}
       	// }
-      	return y2(0);
+      	// return y2(0);
       })
       .attr("height", function(d) { 
-      	console.log("Height: " + height + "Y: " + y2(d.Intensity));
-      	return 50;
+      	for(var type in exerciseTypes){
+        	if(d.Type == exerciseTypes[type]){
+      			return 50;
+      		}
+      	}
+      	return 0;
+      })
+      .append("title")
+        .text(function(d) { 
+        for(var type in exerciseTypes){
+        	if(d.Type == exerciseTypes[type]){
+      			return d.Type;
+      		}
+      	}
+      	return "";
       });
   });
 }
 
 graphLineChart("body","BodyComposition.json","Exercise.json","Percent Body Fat",["Running","Hiking","Basketball"]);
-
+graphLineChart("body","BodyComposition.json","Exercise.json","Skeletal Muscle Mass",["StrengthTraining"]);
 // graphLineChart("body","BodyComposition.json","Weight");
 // graphLineChart("body","BodyComposition.json","Skeletal Muscle Mass");
 
