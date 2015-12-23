@@ -132,20 +132,17 @@ var graphLineChart = function(id, file1, file2, yValue, exerciseTypes){
       // TODO repair this workaround with x.rangeBand()
       .attr("width", 8)
       .attr("y", function(d) {
-      	return height / 2;
-
-      	// for(var type in exerciseTypes){
-      	// 	if(d.Type == exerciseTypes[type]){
-      	// 		// console.log("type: " + d.Type + " at " + d.Intensity);
-      	// 		return y2(d.Intensity);
-      	// 	}
-      	// }
-      	// return y2(0);
+      	for(var type in exerciseTypes){
+        	if(d.Type == exerciseTypes[type]){
+      			return height * 2 / 3 - d.Intensity * 10;
+      		}
+      	}
+      	return height * 2 / 3;
       })
       .attr("height", function(d) { 
       	for(var type in exerciseTypes){
         	if(d.Type == exerciseTypes[type]){
-      			return 50;
+      			return d.Intensity * 10;
       		}
       	}
       	return 0;
@@ -164,8 +161,6 @@ var graphLineChart = function(id, file1, file2, yValue, exerciseTypes){
 
 graphLineChart("body","BodyComposition.json","Exercise.json","Percent Body Fat",["Running","Hiking","Basketball"]);
 graphLineChart("body","BodyComposition.json","Exercise.json","Skeletal Muscle Mass",["StrengthTraining"]);
-// graphLineChart("body","BodyComposition.json","Weight");
-// graphLineChart("body","BodyComposition.json","Skeletal Muscle Mass");
 
 </script>
 
