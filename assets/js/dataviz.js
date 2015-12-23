@@ -180,19 +180,19 @@
 
           svg_bodyFat
           .append("text")
-            .text("Initial:")
+            .text("Target:")
             .attr("y",defaultSVGHeight * 2 / 5)
             .attr("x",(bodyFatWidth * 5 / 16))
             .style("font-size","35px")
-            .style("fill","#E82C0C");
+            .style("fill","#3D9970");
 
           svg_bodyFat
           .append("text")
-            .text(initialBodyFat)
+            .text(targetBodyFat)
             .attr("y",defaultSVGHeight * 2 / 5)
             .attr("x",(bodyFatWidth * 11 / 16))
             .style("font-size","35px")
-            .style("fill","#E82C0C");
+            .style("fill","#3D9970");
 
           svg_bodyFat
           .append("text")
@@ -212,19 +212,19 @@
 
           svg_bodyFat
           .append("text")
-            .text("Target:")
+            .text("Initial:")
             .attr("y",defaultSVGHeight * 4 / 5)
             .attr("x",(bodyFatWidth * 5 / 16))
             .style("font-size","35px")
-            .style("fill","#3D9970");
+            .style("fill","#E82C0C");
 
           svg_bodyFat
           .append("text")
-            .text(targetBodyFat)
+            .text(initialBodyFat)
             .attr("y",defaultSVGHeight * 4 / 5)
             .attr("x",(bodyFatWidth * 11 / 16))
             .style("font-size","35px")
-            .style("fill","#3D9970");
+            .style("fill","#E82C0C");
 
           article_bodyFat
           .append("h2")
@@ -318,25 +318,25 @@
 
           svg_benchMax
             .append("text")
-              .text("INITIAL")
+              .text("TARGET")
               .attr("y",defaultSVGHeight * 1 / 16)
               .attr("x",width_benchMax / 2 + 5)
               .attr("text-anchor","middle")
               .attr("dominant-baseline", "central")
               .attr("text-anchor","middle")
               .style("font-size","15px")
-              .style("fill","#E82C0C");
+              .style("fill","#3D9970");
 
           svg_benchMax
             .append("text")
-              .text(initial_benchMax)
+              .text(target_benchMax)
               .attr("y",defaultSVGHeight * 3 / 16)
               .attr("x",width_benchMax / 2 + 5)
               .attr("text-anchor","middle")
               .attr("dominant-baseline", "central")
               .attr("text-anchor","middle")
               .style("font-size","40px")
-              .style("fill","#E82C0C");
+              .style("fill","#3D9970");
 
           svg_benchMax
             .append("text")
@@ -351,29 +351,29 @@
 
           svg_benchMax
             .append("text")
-              .text(target_benchMax)
+              .text(initial_benchMax)
               .attr("y",defaultSVGHeight * 13 / 16)
               .attr("x",width_benchMax / 2 + 5)
               .attr("text-anchor","middle")
               .attr("dominant-baseline", "central")
               .attr("text-anchor","middle")
               .style("font-size","40px")
-              .style("fill","#3D9970");
+              .style("fill","#E82C0C");
 
           svg_benchMax
             .append("text")
-              .text("TARGET")
+              .text("INITIAL")
               .attr("y",defaultSVGHeight * 15 / 16)
               .attr("x",width_benchMax / 2 + 5)
               .attr("text-anchor","middle")
               .attr("dominant-baseline", "central")
               .attr("text-anchor","middle")
               .style("font-size","15px")
-              .style("fill","#3D9970");
+              .style("fill","#E82C0C");
 
           article_benchMax
             .append("h2")
-            .text("10-Rep Bench Max Weight - Current: " + value_benchMax + units_benchMax + " / Target: 185");
+            .text("Max Weight on Bench Press for 3 sets of 10 reps");
 
 
         // Free Throws

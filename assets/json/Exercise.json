@@ -65,13 +65,23 @@
     "Intensity":7
   },
   {
+    "Date":"2015-09-15",
+    "Type":"StrengthTraining",
+    "Intensity":8
+  },
+  {
     "Date":"2015-09-17",
     "Type":"StrengthTraining",
     "Intensity":5
   },
   {
+    "Date":"2015-09-18",
+    "Type":"Running",
+    "Intensity":5
+  },
+  {
     "Date":"2015-09-21",
-    "Type":"StrengthTraining",
+    "Type":"Running",
     "Intensity":3
   },
   {
@@ -105,13 +115,18 @@
     "Intensity":10
   },
   {
+    "Date":"2015-10-18",
+    "Type":"StrengthTraining",
+    "Intensity":7
+  },
+  {
     "Date":"2015-10-20",
     "Type":"StrengthTraining",
     "Intensity":4
   },
   {
     "Date":"2015-10-23",
-    "Type":"StrengthTraining",
+    "Type":"Running",
     "Intensity":7
   },
   {
@@ -200,7 +215,17 @@
     "Intensity":4
   },
   {
+    "Date":"2015-11-18",
+    "Type":"StrengthTraining",
+    "Intensity":6
+  },
+  {
     "Date":"2015-11-19",
+    "Type":"StrengthTraining",
+    "Intensity":5
+  },
+  {
+    "Date":"2015-11-20",
     "Type":"StrengthTraining",
     "Intensity":5
   },
@@ -231,8 +256,20 @@
     "Intensity":8
   },
   {
+    "Date":"2015-11-26",
+    "Type":"Other",
+    "Note":"StrengthTraining",
+    "Intensity":6
+  },
+  {
+    "Date":"2015-11-27",
+    "Type":"Other",
+    "Note":"Basketball",
+    "Intensity":7
+  },
+  {
     "Date":"2015-11-30",
-    "Type":"Running",
+    "Type":"Basketball",
     "Intensity":7
   },
   {
