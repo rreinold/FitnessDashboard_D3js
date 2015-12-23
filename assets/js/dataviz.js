@@ -145,7 +145,7 @@
         // Percent Body Fat Box
         var bodyFatId = "#GoalPercentBodyFat";
         var initialBodyFatPercentage = 15;
-        var bodyFatWidth = 400;
+        var bodyFatWidth = 350;
         var bodyFatHorizontalCenter = (bodyFatWidth / 2);
         var bodyFatVerticalCenter = (defaultSVGHeight / 2);
 
@@ -158,7 +158,7 @@
 
         svg_scale = svg_bodyFat
           .append("g")
-          .attr("transform","translate(" + (bodyFatHorizontalCenter / 16) + "," + (bodyFatVerticalCenter/2) + ") scale(1)")
+          .attr("transform","translate(" + (bodyFatHorizontalCenter / 32) + "," + (bodyFatVerticalCenter/2) + ") scale(1)")
           .append("g");
         svg_scale
           .append("path")
@@ -180,26 +180,50 @@
 
           svg_bodyFat
           .append("text")
-            .text("Initial:     " + initialBodyFat)
+            .text("Initial:")
             .attr("y",defaultSVGHeight * 2 / 5)
             .attr("x",(bodyFatWidth * 5 / 16))
-            .style("font-size","40px")
+            .style("font-size","35px")
             .style("fill","#E82C0C");
 
           svg_bodyFat
           .append("text")
-            .text("Current: " + bodyFatPercentage)
+            .text(initialBodyFat)
+            .attr("y",defaultSVGHeight * 2 / 5)
+            .attr("x",(bodyFatWidth * 11 / 16))
+            .style("font-size","35px")
+            .style("fill","#E82C0C");
+
+          svg_bodyFat
+          .append("text")
+            .text("Current:")
             .attr("y",defaultSVGHeight * 3 / 5)
             .attr("x",(bodyFatWidth * 5 / 16))
-            .style("font-size","40px")
+            .style("font-size","35px")
             .style("fill","#FF851B");
 
           svg_bodyFat
           .append("text")
-            .text("Target: " + targetBodyFat)
+            .text(bodyFatPercentage)
+            .attr("y",defaultSVGHeight * 3 / 5)
+            .attr("x",(bodyFatWidth * 11 / 16))
+            .style("font-size","35px")
+            .style("fill","#FF851B");
+
+          svg_bodyFat
+          .append("text")
+            .text("Target:")
             .attr("y",defaultSVGHeight * 4 / 5)
             .attr("x",(bodyFatWidth * 5 / 16))
-            .style("font-size","40px")
+            .style("font-size","35px")
+            .style("fill","#3D9970");
+
+          svg_bodyFat
+          .append("text")
+            .text(targetBodyFat)
+            .attr("y",defaultSVGHeight * 4 / 5)
+            .attr("x",(bodyFatWidth * 11 / 16))
+            .style("font-size","35px")
             .style("fill","#3D9970");
 
           article_bodyFat
@@ -257,6 +281,8 @@
         var value_benchMax = 150;
         var units_benchMax = "lbs";
         var width_benchMax = 400;
+        var target_benchMax = 185;
+        var initial_benchMax = 135;
 
         var article_benchMax = addArticle(id_benchMax, width_benchMax);
         var svg_benchMax = article_benchMax
@@ -292,6 +318,28 @@
 
           svg_benchMax
             .append("text")
+              .text("INITIAL")
+              .attr("y",defaultSVGHeight * 1 / 16)
+              .attr("x",width_benchMax / 2 + 5)
+              .attr("text-anchor","middle")
+              .attr("dominant-baseline", "central")
+              .attr("text-anchor","middle")
+              .style("font-size","15px")
+              .style("fill","#E82C0C");
+
+          svg_benchMax
+            .append("text")
+              .text(initial_benchMax)
+              .attr("y",defaultSVGHeight * 3 / 16)
+              .attr("x",width_benchMax / 2 + 5)
+              .attr("text-anchor","middle")
+              .attr("dominant-baseline", "central")
+              .attr("text-anchor","middle")
+              .style("font-size","40px")
+              .style("fill","#E82C0C");
+
+          svg_benchMax
+            .append("text")
               .text(value_benchMax + units_benchMax)
               .attr("y",defaultSVGVerticalCenter)
               .attr("x",width_benchMax / 2 + 5)
@@ -300,6 +348,29 @@
               .attr("text-anchor","middle")
               .style("font-size","80px")
               .style("fill","#FF851B");
+
+          svg_benchMax
+            .append("text")
+              .text(target_benchMax)
+              .attr("y",defaultSVGHeight * 13 / 16)
+              .attr("x",width_benchMax / 2 + 5)
+              .attr("text-anchor","middle")
+              .attr("dominant-baseline", "central")
+              .attr("text-anchor","middle")
+              .style("font-size","40px")
+              .style("fill","#3D9970");
+
+          svg_benchMax
+            .append("text")
+              .text("TARGET")
+              .attr("y",defaultSVGHeight * 15 / 16)
+              .attr("x",width_benchMax / 2 + 5)
+              .attr("text-anchor","middle")
+              .attr("dominant-baseline", "central")
+              .attr("text-anchor","middle")
+              .style("font-size","15px")
+              .style("fill","#3D9970");
+
           article_benchMax
             .append("h2")
             .text("10-Rep Bench Max Weight - Current: " + value_benchMax + units_benchMax + " / Target: 185");
@@ -307,7 +378,7 @@
 
         // Free Throws
         var id_freeThrows = "#GoalFreeThrows";
-        var width_freeThrows = 350;
+        var width_freeThrows = 300;
         var freeThrowsValue;
 
         var article_freeThrows= addArticle(id_freeThrows, width_freeThrows);
