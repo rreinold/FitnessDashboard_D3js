@@ -333,6 +333,48 @@
 			"Rate":1767
 		}
 },
+	{
+		"Date":"2015-12-13",
+		"Weight":166.0,
+		"Total Body Water":104.7,
+		"Dry Lean Mass":38.4,
+		"Body Fat Mass":22.9,
+		"Lean Body Mass":143.1,
+		"Weight":166.0,
+		"Skeletal Muscle Mass":81.6,
+		"Body Fat Mass":22.3,
+		"BMI":24.5,
+		"Percent Body Fat":0.139,
+		"Segmented Lean Analysis":{
+			"Right Arm":{
+				"Mass":8.75,
+				"Percent":119.8
+			},
+			"Left Arm":{
+				"Mass":8.40,
+				"Percent":115.1
+			},
+			"Trunk":{
+				"Mass":64.7,
+				"Percent":111.1
+			},
+			"Right Leg":{
+				"Mass":20.72,
+				"Percent":102.0
+			},
+			"Left Leg":{
+				"Mass":20.79,
+				"Percent":102.3
+			}
+		},
+		"Body Fat Differential":{
+			"Body Fat Mass Differential":0,
+			"Lean Body Mass Differential":0
+		},
+		"Basal Metabolic Rate":{
+			"Rate":1771
+		}
+	},
 {
 		"Date":"2015-12-20",
 		"Weight":166.7,
@@ -373,6 +415,48 @@
 		},
 		"Basal Metabolic Rate":{
 			"Rate":1785
+		}
+	},
+{
+		"Date":"2015-12-30",
+		"Weight":164.8,
+		"Total Body Water":103.4,
+		"Dry Lean Mass":37.7,
+		"Body Fat Mass":23.7,
+		"Lean Body Mass":141.1,
+		"Weight":164.8,
+		"Skeletal Muscle Mass":80.5,
+		"Body Fat Mass":23.7,
+		"BMI":24.3,
+		"Percent Body Fat":0.143,
+		"Segmented Lean Analysis":{
+			"Right Arm":{
+				"Mass":8.66,
+				"Percent":118.9
+			},
+			"Left Arm":{
+				"Mass":8.27,
+				"Percent":113.5
+			},
+			"Trunk":{
+				"Mass":64.1,
+				"Percent":110.3
+			},
+			"Right Leg":{
+				"Mass":20.61,
+				"Percent":101.7
+			},
+			"Left Leg":{
+				"Mass":20.55,
+				"Percent":101.4
+			}
+		},
+		"Body Fat Differential":{
+			"Body Fat Mass Differential":0,
+			"Lean Body Mass Differential":0
+		},
+		"Basal Metabolic Rate":{
+			"Rate":1753
 		}
 	}
 ]

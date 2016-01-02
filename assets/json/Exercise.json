@@ -351,5 +351,20 @@
     "Date":"2015-12-22",
     "Type":"Basketball",
     "Intensity":4
+  },
+  {
+    "Date":"2015-12-28",
+    "Type":"RockClimbing",
+    "Intensity":10
+  },
+  {
+    "Date":"2015-12-30",
+    "Type":"StrengthTraining",
+    "Intensity":8
+  },
+  {
+    "Date":"2016-1-1",
+    "Type":"Hiking",
+    "Intensity":6
   }
 ]
