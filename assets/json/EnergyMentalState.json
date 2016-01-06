@@ -216,7 +216,7 @@
 	"Confidence":9
 },
 {
-	"Date":"2016-1-1",
+	"Date":"2016-01-01",
 	"Sleep_Length":7,
 	"Sleep_Quality":2,
 	"Energy_Available":4,
@@ -225,12 +225,39 @@
 	"Confidence":9
 },
 {
-	"Date":"2016-1-2",
+	"Date":"2016-01-02",
 	"Sleep_Length":8,
 	"Sleep_Quality":8,
 	"Energy_Available":7,
 	"Energy_Exerted":7,
+	"Anxiety":0,
+	"Confidence":8
+},
+{
+	"Date":"2016-01-03",
+	"Sleep_Length":10,
+	"Sleep_Quality":10,
+	"Energy_Available":9,
+	"Energy_Exerted":10,
+	"Anxiety":0,
+	"Confidence":10
+},
+{
+	"Date":"2016-01-04",
+	"Sleep_Length":10,
+	"Sleep_Quality":10,
+	"Energy_Available":8,
+	"Energy_Exerted":7,
 	"Anxiety":2,
+	"Confidence":7
+},
+{
+	"Date":"2016-01-05",
+	"Sleep_Length":8,
+	"Sleep_Quality":7,
+	"Energy_Available":8,
+	"Energy_Exerted":10,
+	"Anxiety":4,
 	"Confidence":8
 }
 ]

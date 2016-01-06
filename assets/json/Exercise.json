@@ -363,8 +363,28 @@
     "Intensity":8
   },
   {
-    "Date":"2016-1-1",
+    "Date":"2016-01-01",
     "Type":"Hiking",
     "Intensity":6
+  },
+  {
+    "Date":"2016-01-02",
+    "Type":"StrengthTraining",
+    "Intensity":6
+  },
+  {
+    "Date":"2016-01-03",
+    "Type":"RockClimbing",
+    "Intensity":10
+  },
+  {
+    "Date":"2016-01-04",
+    "Type":"StrengthTraining",
+    "Intensity":4
+  },
+  {
+    "Date":"2016-01-03",
+    "Type":"Running",
+    "Intensity":10
   }
 ]

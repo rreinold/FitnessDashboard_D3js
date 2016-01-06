@@ -256,11 +256,10 @@
           .append("polygon")
           .attr("points","50,28 52,16 54,28");
 
-        var mileTimeValue = "0:00"; 
-
         d3.json("./assets/json/1MileTimes.json", function(error, data) {
           if (error) throw error;
-          mileTimeValue = data[0].Time;
+          var index = data.length - 1
+          var mileTimeValue = data[index].Time;
           svg_oneMileTime
             .append("text")
               .text(mileTimeValue)
@@ -277,8 +276,8 @@
         });
 
         // 10 Rep Bench Max Box
-        var id_benchMax = "#Goal1MileTime";
-        var value_benchMax = 150;
+        var id_benchMax = "#BenchMax";
+        var value_benchMax = 160;
         var units_benchMax = "lbs";
         var width_benchMax = 400;
         var target_benchMax = 185;
@@ -413,27 +412,6 @@
             .text("Free Throw % - Current: " + freeThrowsValue + " / Target: " + freeThrowsTarget);
 
         });
-
-
-
-
-        d3.json("./assets/json/1MileTimes.json", function(error, data) {
-          if (error) throw error;
-          mileTimeValue = data[0].Time;
-          svg_oneMileTime
-            .append("text")
-              .text(mileTimeValue)
-              .attr("y",defaultSVGVerticalCenter)
-              .attr("x",width_oneMileTime * 5 / 8)
-              .attr("text-anchor","middle")
-              .attr("dominant-baseline", "central")
-              .style("font-size","120px")
-              .style("fill","#3D9970");
-          article_oneMileTime
-            .append("h2")
-            .text("1 Mile Time - Current: " + mileTimeValue + " / Target: 6:00");
-        });
-
 
         // Pull Ups
         var id_pullUps = "#GoalPullUps";
