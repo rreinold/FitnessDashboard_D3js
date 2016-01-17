@@ -383,8 +383,38 @@
     "Intensity":4
   },
   {
-    "Date":"2016-01-03",
+    "Date":"2016-01-05",
     "Type":"Running",
+    "Intensity":10
+  },
+  {
+    "Date":"2016-01-06",
+    "Type":"Yoga",
+    "Intensity":10
+  },
+  {
+    "Date":"2016-01-07",
+    "Type":"StrengthTraining",
+    "Intensity":10
+  },
+  {
+  "Date":"2016-01-10",
+  "Type":"Hiking",
+  "Intensity":7
+  },
+  {
+  "Date":"2016-01-11",
+  "Type":"RockClimbing",
+  "Intensity":10
+  },
+  {
+    "Date":"2016-01-12",
+    "Type":"StrengthTraining",
+    "Intensity":7
+  },
+  {
+    "Date":"2016-01-16",
+    "Type":"HIIT",
     "Intensity":10
   }
 ]

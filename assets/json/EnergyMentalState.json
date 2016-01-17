@@ -259,5 +259,104 @@
 	"Energy_Exerted":10,
 	"Anxiety":4,
 	"Confidence":8
+},
+{
+	"Date":"2016-01-06",
+	"Sleep_Length":7,
+	"Sleep_Quality":7,
+	"Energy_Available":7,
+	"Energy_Exerted":10,
+	"Anxiety":3,
+	"Confidence":10
+},
+{
+	"Date":"2016-01-07",
+	"Sleep_Length":6,
+	"Sleep_Quality":5,
+	"Energy_Available":8,
+	"Energy_Exerted":5,
+	"Anxiety":6,
+	"Confidence":10
+},
+{
+	"Date":"2016-01-08",
+	"Sleep_Length":6,
+	"Sleep_Quality":3,
+	"Energy_Available":6,
+	"Energy_Exerted":10,
+	"Anxiety":1,
+	"Confidence":7
+},
+{
+	"Date":"2016-01-09",
+	"Sleep_Length":8,
+	"Sleep_Quality":6,
+	"Energy_Available":4,
+	"Energy_Exerted":5,
+	"Anxiety":3,
+	"Confidence":9
+},
+{
+	"Date":"2016-01-10",
+	"Sleep_Length":8,
+	"Sleep_Quality":37,
+	"Energy_Available":9,
+	"Energy_Exerted":8,
+	"Anxiety":1,
+	"Confidence":9
+},
+{
+	"Date":"2016-01-11",
+	"Sleep_Length":8,
+	"Sleep_Quality":7,
+	"Energy_Available":8,
+	"Energy_Exerted":10,
+	"Anxiety":1,
+	"Confidence":8
+},
+{
+	"Date":"2016-01-12",
+	"Sleep_Length":8,
+	"Sleep_Quality":7,
+	"Energy_Available":8,
+	"Energy_Exerted":7,
+	"Anxiety":1,
+	"Confidence":8
+},
+{
+	"Date":"2016-01-13",
+	"Sleep_Length":9,
+	"Sleep_Quality":8,
+	"Energy_Available":8,
+	"Energy_Exerted":8,
+	"Anxiety":2,
+	"Confidence":9
+},
+{
+	"Date":"2016-01-14",
+	"Sleep_Length":8,
+	"Sleep_Quality":6,
+	"Energy_Available":7,
+	"Energy_Exerted":6,
+	"Anxiety":1,
+	"Confidence":6
+},
+{
+	"Date":"2016-01-15",
+	"Sleep_Length":7,
+	"Sleep_Quality":5,
+	"Energy_Available":6,
+	"Energy_Exerted":3,
+	"Anxiety":7,
+	"Confidence":6
+},
+{
+	"Date":"2016-01-16",
+	"Sleep_Length":10,
+	"Sleep_Quality":6,
+	"Energy_Available":9,
+	"Energy_Exerted":10,
+	"Anxiety":2,
+	"Confidence":7
 }
 ]
