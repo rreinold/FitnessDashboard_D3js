@@ -189,14 +189,14 @@
     "Type":"StrengthTraining",
     "Intensity":5,
     "Cardio":{
-    	"Type":"Treadmill",
-    	"Distance":"3"
+      "Type":"Treadmill",
+      "Distance":"3"
     },
     "WeightTraining":{
-    	"Chest":{
-    		"WeightRank":8,
-    		"RepRank":4
-    	}
+      "Chest":{
+        "WeightRank":8,
+        "RepRank":4
+      }
     }
   },
   {
@@ -257,14 +257,12 @@
   },
   {
     "Date":"2015-11-26",
-    "Type":"Other",
-    "Note":"StrengthTraining",
+    "Type":"StrengthTraining",
     "Intensity":6
   },
   {
     "Date":"2015-11-27",
-    "Type":"Other",
-    "Note":"Basketball",
+    "Type":"Basketball",
     "Intensity":7
   },
   {
