@@ -10,37 +10,39 @@
 
     var typesOfExercise = 
       {
-        StrengthTraining: {color:"#0074D9"},
-        Basketball:       {color:"gold"},
-        Hiking:           {color:"#FF851B"},
-        Running:          {color:"#2ECC40"},
-        RockClimbing:     {color:"#001f3f"}
+        StrengthTraining: "#0074D9",
+        Basketball:       "gold",
+        Hiking:           "#FF851B",
+        Running:          "#2ECC40",
+        RockClimbing:     "#001f3f",
+        Other:            "purple"
       }
-    var defaultExerciseColor = "purple";
+
+
+      var exerciseStartDate = new Date(2015, 9, 1);
+      var today = new Date();
+      var startYear = exerciseStartDate.getYear();
 
     var svg = d3
         .select("#tracker")
-        .selectAll("svg")
-        .data(d3.range(2015,2017))
-        .enter()
       .append("svg")
-        .attr("width", width)
+        .attr("width", 550)
         .attr("height", height)
       .append("g")
         .attr("transform", "translate(-500,30)");
 
-    svg.append("text")
-        .attr("transform", "translate(690," + cellSize * 3.5 + ")rotate(-90)")
-        .style("text-anchor", "middle")
-        .text(function(d) { return "4Q " + d; });
-
     var rect = svg.selectAll(".day")
-        .data(function(d) { return d3.time.days(new Date(d, 9, 1), new Date()); })
+        .data(function() { return d3.time.days(exerciseStartDate, today); })
       .enter().append("rect")
         .attr("class", "day")
         .attr("width", cellSize)
         .attr("height", cellSize)
-        .attr("x", function(d) { return d3.time.weekOfYear(d) * cellSize; })
+        .attr("x", function(d) { 
+            var yearSpan = (d.getFullYear() - exerciseStartDate.getFullYear()); 
+            var weeks = (52 * yearSpan) + d3.time.weekOfYear(d);
+            return weeks * cellSize;
+        
+        })
         .attr("y", function(d) { return d.getDay() * cellSize; })
         .datum(format);
 
@@ -67,16 +69,13 @@
       rect
           .filter(function(d) { return d in nest; })
           .transition()
-          .delay(1200)
+          .delay(1000)
           .style("fill", function(d) { 
           
-            for(var type in typesOfExercise){
-              if (nest[d][0].Type == type){
-                return typesOfExercise[type].color;
-              }
-            }
+            var color = typesOfExercise[nest[d][0].Type];
+            var defaultColor = typesOfExercise["Other"];
 
-            return defaultExerciseColor;
+            return color != undefined ? color : defaultColor;
 
           })
           .select("title")
@@ -112,7 +111,7 @@
           .attr("class","day")
           .attr("width",cellSize)
           .attr("height",cellSize)
-          .style("fill",typesOfExercise[type].color)
+          .style("fill",typesOfExercise[type])
           .attr("y",yIncrement * cellSize);
 
           // TODO: Why does this need to incremented here?
@@ -168,7 +167,6 @@
           .append("polygon")
           .attr("points","50,28 52,16 54,28");
 
-      
         d3.json("./assets/json/BodyComposition.json", function(error, data) {
           if (error) throw error;
           // TODO Find place for this in json
