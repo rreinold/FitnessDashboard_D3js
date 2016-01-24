@@ -361,29 +361,83 @@
 },
 {
 	"Date":"2016-01-17",
-	"Sleep_Length":7,
-	"Sleep_Quality":5,
+	"Sleep_Length":9,
+	"Sleep_Quality":6,
 	"Energy_Available":7,
-	"Energy_Exerted":8,
-	"Anxiety":6,
+	"Energy_Exerted":7,
+	"Anxiety":2,
 	"Confidence":7
 },
 {
 	"Date":"2016-01-18",
-	"Sleep_Length":7,
-	"Sleep_Quality":4,
-	"Energy_Available":8,
-	"Energy_Exerted":5,
-	"Anxiety":8,
-	"Confidence":3
+	"Sleep_Length":9,
+	"Sleep_Quality":6,
+	"Energy_Available":7,
+	"Energy_Exerted":7,
+	"Anxiety":7,
+	"Confidence":7
 },
 {
 	"Date":"2016-01-19",
-	"Sleep_Length":7,
-	"Sleep_Quality":5,
-	"Energy_Available":5,
-	"Energy_Exerted":4,
-	"Anxiety":3,
+	"Sleep_Length":10,
+	"Sleep_Quality":6,
+	"Energy_Available":7,
+	"Energy_Exerted":7,
+	"Anxiety":7,
 	"Confidence":7
+},
+{
+	"Date":"2016-01-20",
+	"Sleep_Length":10,
+	"Sleep_Quality":6,
+	"Energy_Available":9,
+	"Energy_Exerted":10,
+	"Anxiety":7,
+	"Confidence":7
+},
+{
+	"Date":"2016-01-16",
+	"Sleep_Length":10,
+	"Sleep_Quality":6,
+	"Energy_Available":9,
+	"Energy_Exerted":6,
+	"Anxiety":7,
+	"Confidence":7
+},
+{
+	"Date":"2016-01-21",
+	"Sleep_Length":10,
+	"Sleep_Quality":6,
+	"Energy_Available":9,
+	"Energy_Exerted":7,
+	"Anxiety":7,
+	"Confidence":5
+},
+{
+	"Date":"2016-01-22",
+	"Sleep_Length":10,
+	"Sleep_Quality":6,
+	"Energy_Available":7,
+	"Energy_Exerted":16,
+	"Anxiety":4,
+	"Confidence":6
+},
+{
+	"Date":"2016-01-23",
+	"Sleep_Length":10,
+	"Sleep_Quality":8,
+	"Energy_Available":10,
+	"Energy_Exerted":10,
+	"Anxiety":0,
+	"Confidence":10
+},
+{
+	"Date":"2016-01-24",
+	"Sleep_Length":10,
+	"Sleep_Quality":10,
+	"Energy_Available":9,
+	"Energy_Exerted":8,
+	"Anxiety":0,
+	"Confidence":10
 }
 ]

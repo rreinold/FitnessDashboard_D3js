@@ -189,14 +189,14 @@
     "Type":"StrengthTraining",
     "Intensity":5,
     "Cardio":{
-      "Type":"Treadmill",
-      "Distance":"3"
+    	"Type":"Treadmill",
+    	"Distance":"3"
     },
     "WeightTraining":{
-      "Chest":{
-        "WeightRank":8,
-        "RepRank":4
-      }
+    	"Chest":{
+    		"WeightRank":8,
+    		"RepRank":4
+    	}
     }
   },
   {
@@ -257,12 +257,14 @@
   },
   {
     "Date":"2015-11-26",
-    "Type":"StrengthTraining",
+    "Type":"Other",
+    "Note":"StrengthTraining",
     "Intensity":6
   },
   {
     "Date":"2015-11-27",
-    "Type":"Basketball",
+    "Type":"Other",
+    "Note":"Basketball",
     "Intensity":7
   },
   {
@@ -414,5 +416,25 @@
     "Date":"2016-01-16",
     "Type":"HIIT",
     "Intensity":10
+  },
+  {
+    "Date":"2016-01-20",
+    "Type":"HIIT",
+    "Intensity":8
+  },
+  {
+    "Date":"2016-01-21",
+    "Type":"HIIT",
+    "Intensity":9
+  },
+  {
+    "Date":"2016-01-23",
+    "Type":"HIIT",
+    "Intensity":10
+  },
+  {
+    "Date":"2016-01-24",
+    "Type":"Hiking",
+    "Intensity":6
   }
 ]
