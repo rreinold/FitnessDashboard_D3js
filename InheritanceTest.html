@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Testing Inheritance with js</title>
+</head>
+<body>
+	<script type="text/javascript" src="assets/js/prototypes.js"></script>
+	<script type="text/javascript">
+
+	var writeln = function(output){
+		document.write(output + "<br />");
+	}
+
+	var testInheritance = function(className, instance, superclass){
+		writeln(className + " inheritance: " + (instance instanceof superclass ? "PASS" : "FAIL"));
+	}
+
+	testInheritance("Upward Goal",new UpwardGoal, Goal);
+	testInheritance("Upward Goal",new DownwardGoal, Goal);
+
+	testInheritance("CurrentOnlyVisual Goal",new CurrentOnlyVisual, Visual);
+	testInheritance("InitialCurrentAndTargetVisual Goal",new InitialCurrentAndTargetVisual, Visual);
+
+	</script>
+</body>
+</html?

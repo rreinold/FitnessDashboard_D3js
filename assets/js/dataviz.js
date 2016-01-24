@@ -138,7 +138,6 @@
             .append("article")
             .attr("class","item thumb")
             .attr("id",id)
-        
             .attr("data-width",width);
         };
 
@@ -151,85 +150,111 @@
 
         var article_bodyFat = addArticle(bodyFatId, bodyFatWidth);
 
-        var svg_bodyFat = article_bodyFat
-            .append("svg")
-            .attr("width",bodyFatWidth)
-            .attr("height",defaultSVGHeight);
+        // var svg_bodyFat = article_bodyFat
+        //     .append("svg")
+        //     .attr("width",bodyFatWidth)
+        //     .attr("height",defaultSVGHeight);
 
-        svg_scale = svg_bodyFat
-          .append("g")
-          .attr("transform","translate(" + (bodyFatHorizontalCenter / 32) + "," + (bodyFatVerticalCenter/2) + ") scale(1)")
-          .append("g");
-        svg_scale
-          .append("path")
-          .attr("fill","#000000")
-          .attr("d","M89,3c4.411,0,8,3.589,8,8v78c0,4.411-3.589,8-8,8H11c-4.411,0-8-3.589-8-8V11c0-4.411,3.589-8,8-8H89     M31.466,42.708l2.121-2.121c4.785-4.784,11.146-7.419,17.913-7.419s13.128,2.635,17.913,7.419l2.121,2.121l2.121-2.121    l15.321-15.321l2.121-2.121l-2.121-2.121C78.967,11.013,65.657,5.5,51.5,5.5s-27.467,5.513-37.477,15.523l-2.121,2.121    l2.121,2.121l15.321,15.321L31.466,42.708 M89,0H11C4.925,0,0,4.925,0,11v78c0,6.075,4.925,11,11,11h78c6.075,0,11-4.925,11-11V11    C100,4.925,95.075,0,89,0L89,0z M31.466,38.466L16.145,23.145C25.908,13.381,38.704,8.5,51.5,8.5s25.592,4.881,35.355,14.645    L71.534,38.466c-5.532-5.532-12.783-8.298-20.034-8.298S36.998,32.934,31.466,38.466L31.466,38.466z");
-        svg_scale  
-          .append("polygon")
-          .attr("points","50,28 52,16 54,28");
+        // svg_scale = svg_bodyFat
+        //   .append("g")
+        //   .attr("transform","translate(" + (bodyFatHorizontalCenter / 32) + "," + (bodyFatVerticalCenter/2) + ") scale(1)")
+        //   .append("g");
+        // svg_scale
+        //   .append("path")
+        //   .attr("fill","#000000")
+        //   .attr("d","M89,3c4.411,0,8,3.589,8,8v78c0,4.411-3.589,8-8,8H11c-4.411,0-8-3.589-8-8V11c0-4.411,3.589-8,8-8H89     M31.466,42.708l2.121-2.121c4.785-4.784,11.146-7.419,17.913-7.419s13.128,2.635,17.913,7.419l2.121,2.121l2.121-2.121    l15.321-15.321l2.121-2.121l-2.121-2.121C78.967,11.013,65.657,5.5,51.5,5.5s-27.467,5.513-37.477,15.523l-2.121,2.121    l2.121,2.121l15.321,15.321L31.466,42.708 M89,0H11C4.925,0,0,4.925,0,11v78c0,6.075,4.925,11,11,11h78c6.075,0,11-4.925,11-11V11    C100,4.925,95.075,0,89,0L89,0z M31.466,38.466L16.145,23.145C25.908,13.381,38.704,8.5,51.5,8.5s25.592,4.881,35.355,14.645    L71.534,38.466c-5.532-5.532-12.783-8.298-20.034-8.298S36.998,32.934,31.466,38.466L31.466,38.466z");
+        // svg_scale  
+        //   .append("polygon")
+        //   .attr("points","50,28 52,16 54,28");
 
-      
+        var fatLossGoal = new Goal();
+        fatLossGoal.name = "Body Fat Loss";
+        fatLossGoal.units = "%";
+        fatLossGoal.icon = [
+
+        "M81.3,5H18.8C11.2,5,5,11.2,5,18.8v62.5C5,88.8,11.2,95,18.8,95h62.5C88.8,95,95,88.8,95,81.2V18.8C95,11.2,88.8,5,81.3,5z   M81.2,92.5H18.8c-4.9,0-9-3.1-10.6-7.5c2.5,3,6.3,5,10.6,5h62.5c4.3,0,8.1-1.9,10.6-5C90.3,89.4,86.1,92.5,81.2,92.5z M92.5,76.3  c0,6.2-5,11.3-11.3,11.3H18.8c-6.2,0-11.3-5-11.3-11.3V18.8c0-6.2,5-11.3,11.3-11.3h62.5c6.2,0,11.3,5,11.3,11.3V76.3z",
+        "M50,12.5c-4.4,0-8.7,0.9-12.7,2.8l-0.7,0.3v2.1c0,7.5,6,13.5,13.3,13.6l0.1,0l0.1,0c7.3,0,13.3-6.1,13.3-13.6v-2.1l-0.7-0.3  C58.7,13.4,54.4,12.5,50,12.5z M60.9,17.7c0,6.1-4.9,11-10.8,11.1l-0.1,0l-0.1,0c-6,0-10.8-5-10.8-11.1v-0.5c3.1-1.3,6.3-2,9.7-2.2  v7.5h2.5V15c3.4,0.1,6.6,0.9,9.7,2.2V17.7z",
+        "M32.6,19.5c-0.1-0.2-0.2-0.3-0.4-0.5c-0.3-0.4-0.6-1-1.1-1.4c-1.7-1.7-3.9-2.7-6.3-2.7c-2.4,0-4.8,1-6.8,2.8  c-4.5,4.2-6.9,9.6-7.1,15.9c-0.2,4,0.2,8.1,0.5,11.7c0.2,2.3,0.5,4.7,0.9,6.9c0.3,2.2,0.6,4.5,0.9,6.8c0.2,2.6,0.4,5.2,0.5,7.8  c0.1,1.7,0.2,3.5,0.3,5.2c0.2,2.8,0.9,4.9,2.1,6.7c1.6,2.4,4.3,3.8,7,3.8c0.6,0,1.3-0.1,1.9-0.2c4-1,6.6-3.6,7.3-7.5  c0.5-2.4,0.3-4.8,0.2-7.2c-0.1-1.6-0.3-3.1-0.5-4.6c-0.2-1.7-0.4-3.5-0.5-5.2c-0.2-5.2,0.7-10.6,2.7-16.4c2.4-6.9,2-13.9-1.4-21.6  L32.6,19.5z M31.8,40.5c-2.2,6.1-3.1,11.8-2.9,17.3c0.1,1.8,0.3,3.6,0.5,5.4c0.2,1.5,0.4,3,0.5,4.5c0.1,2.2,0.3,4.5-0.1,6.6  c-0.6,2.9-2.4,4.8-5.4,5.5c-2.3,0.6-4.9-0.5-6.3-2.5c-0.9-1.4-1.5-3.1-1.6-5.4c-0.1-1.7-0.2-3.5-0.3-5.2c-0.1-2.6-0.3-5.3-0.5-7.9  c-0.2-2.3-0.5-4.6-0.9-6.9c-0.3-2.2-0.6-4.6-0.9-6.8c-0.3-3.5-0.7-7.5-0.5-11.3c0.2-5.6,2.4-10.4,6.4-14.2c1.4-1.4,3.2-2.1,5-2.1  c1.7,0,3.3,0.7,4.5,1.9c0.3,0.3,0.5,0.7,0.8,1.1c0.1,0.2,0.2,0.3,0.3,0.5C33.6,27.9,34,34.3,31.8,40.5z",
+        "M81.9,17.7c-1.9-1.8-4.3-2.8-6.8-2.8c-2.4,0-4.6,0.9-6.3,2.7c-0.4,0.5-0.8,1-1.1,1.4c-0.1,0.2-0.2,0.3-0.4,0.5l-0.1,0.2  c-3.4,7.7-3.9,14.7-1.4,21.6c2.1,5.8,3,11.2,2.7,16.4c-0.1,1.7-0.3,3.5-0.5,5.2c-0.2,1.5-0.4,3.1-0.5,4.6c-0.1,2.4-0.3,4.8,0.2,7.2  c0.7,3.9,3.3,6.5,7.3,7.5c0.6,0.2,1.3,0.2,1.9,0.2c0,0,0,0,0,0c2.8,0,5.4-1.4,7-3.8c1.2-1.8,1.9-3.9,2.1-6.7  c0.1-1.7,0.2-3.5,0.3-5.2c0.1-2.6,0.3-5.2,0.5-7.8c0.2-2.3,0.5-4.6,0.9-6.8c0.3-2.3,0.6-4.6,0.9-6.9c0.3-3.5,0.7-7.6,0.5-11.7  C88.8,27.3,86.4,22,81.9,17.7z M86.1,45c-0.2,2.3-0.5,4.6-0.9,6.8c-0.3,2.3-0.6,4.6-0.9,6.9c-0.3,2.6-0.4,5.3-0.5,7.9  c-0.1,1.7-0.2,3.5-0.3,5.2c-0.2,2.3-0.7,4.1-1.6,5.4c-1.2,1.7-3,2.7-5,2.7c-0.4,0-0.9-0.1-1.3-0.2c-3-0.7-4.9-2.6-5.4-5.5  c-0.4-2.1-0.3-4.3-0.1-6.6c0.1-1.5,0.3-3,0.5-4.5c0.2-1.8,0.4-3.6,0.5-5.4c0.2-5.5-0.7-11.2-2.9-17.3c-2.2-6.2-1.8-12.6,1.3-19.6  c0.1-0.2,0.2-0.3,0.3-0.5c0.3-0.4,0.5-0.8,0.8-1.1c1.2-1.2,2.8-1.9,4.5-1.9c1.8,0,3.6,0.8,5,2.1c4,3.8,6.1,8.5,6.4,14.2  C86.8,37.6,86.4,41.6,86.1,45z"
+        ];
+        var fatLossEntry = function(entries){
+
+          var mostRecentIndex = entries.length - 1;
+          return percent(entries[mostRecentIndex]["Percent Body Fat"]);
+        }
+
         d3.json("./assets/json/BodyComposition.json", function(error, data) {
           if (error) throw error;
-          // TODO Find place for this in json
-          // var targetBodyFat = percent(data[0]["Target"]);
-          var targetBodyFat = percent(.12);
-          var initialBodyFat = percent(data[0]["Percent Body Fat"]);
-          var mostRecentIndex = data.length - 1;
-          var bodyFatPercentage = percent(data[mostRecentIndex]["Percent Body Fat"]);
 
-          svg_bodyFat
-          .append("text")
-            .text("Target:")
-            .attr("y",defaultSVGHeight * 2 / 5)
-            .attr("x",(bodyFatWidth * 5 / 16))
-            .style("font-size","35px")
-            .style("fill","#3D9970");
+          fatLossGoal.current = fatLossEntry(data);
 
-          svg_bodyFat
-          .append("text")
-            .text(targetBodyFat)
-            .attr("y",defaultSVGHeight * 2 / 5)
-            .attr("x",(bodyFatWidth * 11 / 16))
-            .style("font-size","35px")
-            .style("fill","#3D9970");
+          var fatLossVisual = new Visual(article_bodyFat,fatLossGoal, fatLossEntry, data);
 
-          svg_bodyFat
-          .append("text")
-            .text("Current:")
-            .attr("y",defaultSVGHeight * 3 / 5)
-            .attr("x",(bodyFatWidth * 5 / 16))
-            .style("font-size","35px")
-            .style("fill","#FF851B");
-
-          svg_bodyFat
-          .append("text")
-            .text(bodyFatPercentage)
-            .attr("y",defaultSVGHeight * 3 / 5)
-            .attr("x",(bodyFatWidth * 11 / 16))
-            .style("font-size","35px")
-            .style("fill","#FF851B");
-
-          svg_bodyFat
-          .append("text")
-            .text("Initial:")
-            .attr("y",defaultSVGHeight * 4 / 5)
-            .attr("x",(bodyFatWidth * 5 / 16))
-            .style("font-size","35px")
-            .style("fill","#E82C0C");
-
-          svg_bodyFat
-          .append("text")
-            .text(initialBodyFat)
-            .attr("y",defaultSVGHeight * 4 / 5)
-            .attr("x",(bodyFatWidth * 11 / 16))
-            .style("font-size","35px")
-            .style("fill","#E82C0C");
-
-          article_bodyFat
-          .append("h2")
-            .text("Percent Body Fat");
+          fatLossVisual.render();
         });
+
+
+        // d3.json("./assets/json/BodyComposition.json", function(error, data) {
+        //   if (error) throw error;
+        //   // TODO Find place for this in json
+        //   // var targetBodyFat = percent(data[0]["Target"]);
+        //   var targetBodyFat = percent(.12);
+        //   var initialBodyFat = percent(data[0]["Percent Body Fat"]);
+        //   var mostRecentIndex = data.length - 1;
+        //   var bodyFatPercentage = percent(data[mostRecentIndex]["Percent Body Fat"]);
+
+        //   svg_bodyFat
+        //   .append("text")
+        //     .text("Target:")
+        //     .attr("y",defaultSVGHeight * 2 / 5)
+        //     .attr("x",(bodyFatWidth * 5 / 16))
+        //     .style("font-size","35px")
+        //     .style("fill","#3D9970");
+
+        //   svg_bodyFat
+        //   .append("text")
+        //     .text(targetBodyFat)
+        //     .attr("y",defaultSVGHeight * 2 / 5)
+        //     .attr("x",(bodyFatWidth * 11 / 16))
+        //     .style("font-size","35px")
+        //     .style("fill","#3D9970");
+
+        //   svg_bodyFat
+        //   .append("text")
+        //     .text("Current:")
+        //     .attr("y",defaultSVGHeight * 3 / 5)
+        //     .attr("x",(bodyFatWidth * 5 / 16))
+        //     .style("font-size","35px")
+        //     .style("fill","#FF851B");
+
+        //   svg_bodyFat
+        //   .append("text")
+        //     .text(bodyFatPercentage)
+        //     .attr("y",defaultSVGHeight * 3 / 5)
+        //     .attr("x",(bodyFatWidth * 11 / 16))
+        //     .style("font-size","35px")
+        //     .style("fill","#FF851B");
+
+        //   svg_bodyFat
+        //   .append("text")
+        //     .text("Initial:")
+        //     .attr("y",defaultSVGHeight * 4 / 5)
+        //     .attr("x",(bodyFatWidth * 5 / 16))
+        //     .style("font-size","35px")
+        //     .style("fill","#E82C0C");
+
+        //   svg_bodyFat
+        //   .append("text")
+        //     .text(initialBodyFat)
+        //     .attr("y",defaultSVGHeight * 4 / 5)
+        //     .attr("x",(bodyFatWidth * 11 / 16))
+        //     .style("font-size","35px")
+        //     .style("fill","#E82C0C");
+
+        //   article_bodyFat
+        //   .append("h2")
+        //     .text("Percent Body Fat");
+        // });
 
         // 1 Mile Time box
         var id_oneMileTime = "#Goal1MileTime"
