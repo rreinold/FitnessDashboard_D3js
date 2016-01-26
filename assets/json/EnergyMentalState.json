@@ -439,5 +439,23 @@
 	"Energy_Exerted":8,
 	"Anxiety":0,
 	"Confidence":10
+},
+{
+	"Date":"2016-01-25",
+	"Sleep_Length":6,
+	"Sleep_Quality":3,
+	"Energy_Available":8,
+	"Energy_Exerted":10,
+	"Anxiety":5,
+	"Confidence":8
+},
+{
+	"Date":"2016-01-26",
+	"Sleep_Length":6,
+	"Sleep_Quality":2,
+	"Energy_Available":9,
+	"Energy_Exerted":8,
+	"Anxiety":3,
+	"Confidence":8
 }
 ]
