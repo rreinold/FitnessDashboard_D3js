@@ -453,8 +453,53 @@
 	"Date":"2016-01-26",
 	"Sleep_Length":6,
 	"Sleep_Quality":2,
-	"Energy_Available":9,
+	"Energy_Available":8,
 	"Energy_Exerted":8,
+	"Anxiety":3,
+	"Confidence":8
+},
+{
+	"Date":"2016-01-27",
+	"Sleep_Length":6,
+	"Sleep_Quality":2,
+	"Energy_Available":8,
+	"Energy_Exerted":4,
+	"Anxiety":3,
+	"Confidence":8
+},
+{
+	"Date":"2016-01-28",
+	"Sleep_Length":6,
+	"Sleep_Quality":2,
+	"Energy_Available":8,
+	"Energy_Exerted":4,
+	"Anxiety":3,
+	"Confidence":8
+},
+{
+	"Date":"2016-01-29",
+	"Sleep_Length":6,
+	"Sleep_Quality":2,
+	"Energy_Available":8,
+	"Energy_Exerted":4,
+	"Anxiety":3,
+	"Confidence":8
+},
+{
+	"Date":"2016-01-30",
+	"Sleep_Length":6,
+	"Sleep_Quality":2,
+	"Energy_Available":8,
+	"Energy_Exerted":4,
+	"Anxiety":3,
+	"Confidence":8
+},
+{
+	"Date":"2016-01-31",
+	"Sleep_Length":6,
+	"Sleep_Quality":2,
+	"Energy_Available":8,
+	"Energy_Exerted":10,
 	"Anxiety":3,
 	"Confidence":8
 }

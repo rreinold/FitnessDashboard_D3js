@@ -542,5 +542,47 @@
 		"Basal Metabolic Rate":{
 			"Rate":1804
 		}
+	},
+	{
+		"Date":"2016-01-31",
+		"Weight":165.7,
+		"Total Body Water":106.3,
+		"Dry Lean Mass":38.6,
+		"Body Fat Mass":20.9,
+		"Lean Body Mass":144.8,
+		"Weight":165.7,
+		"Skeletal Muscle Mass":82.7,
+		"Body Fat Mass":20.9,
+		"BMI":24.5,
+		"Percent Body Fat":0.116,
+		"Segmented Lean Analysis":{
+			"Right Arm":{
+				"Mass":8.91,
+				"Percent":121.8
+			},
+			"Left Arm":{
+				"Mass":8.60,
+				"Percent":117.9
+			},
+			"Trunk":{
+				"Mass":65.6,
+				"Percent":112.6
+			},
+			"Right Leg":{
+				"Mass":20.99,
+				"Percent":103.3
+			},
+			"Left Leg":{
+				"Mass":21.05,
+				"Percent":103.7
+			}
+		},
+		"Body Fat Differential":{
+			"Body Fat Mass Differential":0,
+			"Lean Body Mass Differential":0
+		},
+		"Basal Metabolic Rate":{
+			"Rate":1789
+		}
 	}
 ]

@@ -441,5 +441,15 @@
     "Date":"2016-01-25",
     "Type":"HIIT",
     "Intensity":10
+  },
+  {
+    "Date":"2016-01-28",
+    "Type":"RockClimbing",
+    "Intensity":10
+  },
+  {
+    "Date":"2016-01-31",
+    "Type":"HIIT",
+    "Intensity":10
   }
 ]
