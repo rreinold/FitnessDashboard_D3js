@@ -19,7 +19,7 @@
       }
 
 
-      var exerciseStartDate = new Date(2015, 9, 1);
+      var exerciseStartDate = new Date(2015, 10, 1);
       var today = new Date();
       var startYear = exerciseStartDate.getYear();
 
@@ -29,7 +29,7 @@
         .attr("width", 550)
         .attr("height", height)
       .append("g")
-        .attr("transform", "translate(-500,30)");
+        .attr("transform", "translate(-600,30)");
 
     var rect = svg.selectAll(".day")
         .data(function() { return d3.time.days(exerciseStartDate, today); })
