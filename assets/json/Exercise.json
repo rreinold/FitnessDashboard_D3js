@@ -451,5 +451,25 @@
     "Date":"2016-01-31",
     "Type":"HIIT",
     "Intensity":10
+  },
+  {
+    "Date":"2016-02-02",
+    "Type":"StrengthTraining",
+    "Intensity":5
+  },
+  {
+    "Date":"2016-02-03",
+    "Type":"RockClimbing",
+    "Intensity":5
+  },
+  {
+    "Date":"2016-02-06",
+    "Type":"HIIT",
+    "Intensity":6
+  },
+  {
+    "Date":"2016-02-07",
+    "Type":"Hiking",
+    "Intensity":5
   }
 ]

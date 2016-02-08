@@ -502,5 +502,68 @@
 	"Energy_Exerted":10,
 	"Anxiety":3,
 	"Confidence":8
+},
+{
+	"Date":"2016-02-01",
+	"Sleep_Length":8,
+	"Sleep_Quality":7,
+	"Energy_Available":8,
+	"Energy_Exerted":4,
+	"Anxiety":3,
+	"Confidence":8
+},
+{
+	"Date":"2016-02-02",
+	"Sleep_Length":8,
+	"Sleep_Quality":6,
+	"Energy_Available":4,
+	"Energy_Exerted":6,
+	"Anxiety":4,
+	"Confidence":7
+},
+{
+	"Date":"2016-02-03",
+	"Sleep_Length":7,
+	"Sleep_Quality":6,
+	"Energy_Available":7,
+	"Energy_Exerted":10,
+	"Anxiety":2,
+	"Confidence":8
+},
+{
+	"Date":"2016-02-04",
+	"Sleep_Length":7,
+	"Sleep_Quality":6,
+	"Energy_Available":6,
+	"Energy_Exerted":4,
+	"Anxiety":4,
+	"Confidence":
+},
+{
+	"Date":"2016-02-05",
+	"Sleep_Length":8,
+	"Sleep_Quality":5,
+	"Energy_Available":2,
+	"Energy_Exerted":2,
+	"Anxiety":8,
+	"Confidence":4
+},
+{
+	"Date":"2016-02-06",
+	"Sleep_Length":12,
+	"Sleep_Quality":8,
+	"Energy_Available":7,
+	"Energy_Exerted":9,
+	"Anxiety":6,
+	"Confidence":6
+},
+{
+	"Date":"2016-02-07",
+	"Sleep_Length":7,
+	"Sleep_Quality":7,
+	"Energy_Available":6,
+	"Energy_Exerted":6,
+	"Anxiety":1,
+	"Confidence":7
 }
 ]
