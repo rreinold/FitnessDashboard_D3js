@@ -565,5 +565,32 @@
 	"Energy_Exerted":6,
 	"Anxiety":1,
 	"Confidence":7
+},
+{
+	"Date":"2016-02-08",
+	"Sleep_Length":9,
+	"Sleep_Quality":8,
+	"Energy_Available":6,
+	"Energy_Exerted":3,
+	"Anxiety":6,
+	"Confidence":5
+},
+{
+	"Date":"2016-02-09",
+	"Sleep_Length":7,
+	"Sleep_Quality":8,
+	"Energy_Available":5,
+	"Energy_Exerted":3,
+	"Anxiety":3,
+	"Confidence":6
+},
+{
+	"Date":"2016-02-10",
+	"Sleep_Length":6,
+	"Sleep_Quality":6,
+	"Energy_Available":6,
+	"Energy_Exerted":8,
+	"Anxiety":5,
+	"Confidence":4
 }
 ]

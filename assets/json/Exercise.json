@@ -471,5 +471,10 @@
     "Date":"2016-02-07",
     "Type":"Hiking",
     "Intensity":5
+  },
+  {
+    "Date":"2016-02-10",
+    "Type":"StrengthTraining",
+    "Intensity":8
   }
 ]
