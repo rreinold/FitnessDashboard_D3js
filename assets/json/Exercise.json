@@ -476,5 +476,50 @@
     "Date":"2016-02-10",
     "Type":"StrengthTraining",
     "Intensity":8
+  },
+  {
+    "Date":"2016-02-14",
+    "Type":"Hiking",
+    "Intensity":7
+  },
+  {
+    "Date":"2016-02-22",
+    "Type":"StrengthTraining",
+    "Intensity":7
+  },
+  {
+    "Date":"2016-02-23",
+    "Type":"StrengthTraining",
+    "Intensity":9
+  },
+  {
+    "Date":"2016-02-24",
+    "Type":"RockClimbing",
+    "Intensity":9
+  },
+  {
+    "Date":"2016-02-25",
+    "Type":"StrengthTraining",
+    "Intensity":8
+  },
+  {
+    "Date":"2016-02-26",
+    "Type":"StrengthTraining",
+    "Intensity":7
+  },
+  {
+    "Date":"2016-02-28",
+    "Type":"StrengthTraining",
+    "Intensity":7
+  },
+  {
+    "Date":"2016-03-01",
+    "Type":"RockClimbing",
+    "Intensity":10
+  },
+  {
+    "Date":"2016-03-02",
+    "Type":"StrengthTraining",
+    "Intensity":10
   }
 ]

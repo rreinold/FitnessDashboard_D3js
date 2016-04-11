@@ -45,7 +45,7 @@ body {
 <!-- TODO: Ensure d3.min.js is comaptible with visual, rather than d3.v3.min.js -->
 <script src="assets/js/d3.min.js"></script>
 <script>
-var graphLineChart = function(id, file1, file2, yValue, exerciseTypes){
+var graphLineChart = function(id, file1, file2, yValue, exerciseTypes, direction){
 
 	const jsonRoot = "assets/json/";
 
@@ -159,7 +159,7 @@ var graphLineChart = function(id, file1, file2, yValue, exerciseTypes){
   });
 }
 
-graphLineChart("body","BodyComposition.json","Exercise.json","Percent Body Fat",["Running","Hiking","Basketball","HIIT"]);
+graphLineChart("body","BodyComposition.json","Exercise.json","Percent Body Fat",["Running","Hiking","Basketball","HIIT"], -1);
 graphLineChart("body","BodyComposition.json","Exercise.json","Skeletal Muscle Mass",["StrengthTraining","HIIT"]);
 
 </script>
