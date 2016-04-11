@@ -721,7 +721,7 @@
 		"Skeletal Muscle Mass":84.2,
 		"Body Fat Mass":21.3,
 		"BMI":24.9,
-		"Percent Body Fat":.127,
+		"Percent Body Fat":0.127,
 		"Segmented Lean Analysis":{
 			"Right Arm":{
 				"Mass":9.24,
